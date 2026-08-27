@@ -1,0 +1,46 @@
+@media (max-width: 960px) {
+  :root { --header-height: 74px; }
+  .site-header { backdrop-filter: none; }
+  .header-inner, .container { width: min(calc(100% - 40px), var(--max-width)); }
+  .menu-toggle { display: block; position: fixed; z-index: 103; top: 15px; right: 20px; }
+  .menu-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .site-nav {
+    position: fixed;
+    z-index: 101;
+    inset: 0;
+    width: 100vw;
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    background: var(--paper);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s ease, visibility .2s ease;
+  }
+  .site-nav.is-open { opacity: 1; visibility: visible; }
+  .site-nav ul { flex-direction: column; gap: 12px; text-align: center; }
+  .site-nav a { font-family: var(--serif); font-size: clamp(2rem, 7vw, 3.5rem); font-weight: 400; letter-spacing: -.02em; }
+  .site-nav a::after { bottom: 7px; }
+  .section { padding: 90px 0; }
+  .section-sm { padding: 64px 0; }
+  .page-hero { padding: 74px 0 56px; }
+  .page-hero-grid { grid-template-columns: 1fr; gap: 30px; }
+  .page-index { text-align: left; }
+  .section-head { align-items: flex-start; flex-direction: column; margin-bottom: 38px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+@media (max-width: 640px) {
+  .header-inner, .container { width: min(calc(100% - 32px), var(--max-width)); }
+  .brand-text { max-width: 170px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .display-title { font-size: clamp(3rem, 17vw, 5rem); }
+  .page-title { font-size: clamp(2.8rem, 15vw, 4.6rem); }
+  .section { padding: 72px 0; }
+  .section-sm { padding: 52px 0; }
+  .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+  .footer-brand { grid-column: auto; }
+  .footer-bottom { flex-direction: column; gap: 8px; }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="관광 콘텐츠의 SNS 업로드 성과를 분석하는 대시보드입니다.">
+  <title>SNS Dashboard — Tourism Content Archive</title>
+  <link rel="stylesheet" href="css/common.css"><link rel="stylesheet" href="css/sns.css"><link rel="stylesheet" href="css/responsive.css">
+  <script src="js/common.js" defer></script><script src="js/sns.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="홈으로 이동"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text">TOURISM ARCHIVE</span></a><button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span></button><nav class="site-nav" id="site-navigation" aria-label="주요 메뉴"><ul><li><a href="report.html">REPORT</a></li><li><a href="contents.html">CONTENTS</a></li><li><a href="sns.html" aria-current="page">SNS</a></li><li><a href="final.html">FINAL PROJECT</a></li></ul></nav></div></header>
+  <main id="main">
+    <section class="page-hero"><div class="container page-hero-grid"><div class="reveal"><p class="eyebrow">Performance dashboard</p><h1 class="page-title">SNS</h1><p class="page-meta">숫자 뒤에 있는 반응을 읽고 다음 콘텐츠의 방향을 찾는 공간</p></div><div class="page-index" aria-hidden="true">03</div></div></section>
+    <section class="section-sm dashboard"><div class="container">
+      <div class="dashboard-header reveal"><div><p class="eyebrow">Overview</p><h2 class="section-title">Content performance</h2></div><label>기간<select id="period-select"><option value="30">최근 30일</option><option value="90">최근 90일</option><option value="all">전체 기간</option></select></label></div>
+      <div class="metrics-grid reveal">
+        <article><div><span>Total Views</span><small>↗ 18.4%</small></div><strong data-metric="views">128,420</strong><p>전체 콘텐츠 조회수</p></article>
+        <article><div><span>Reach</span><small>↗ 12.1%</small></div><strong data-metric="reach">86,240</strong><p>콘텐츠 도달 계정</p></article>
+        <article><div><span>Engagement</span><small>↗ 6.8%</small></div><strong data-metric="engagement">7.8%</strong><p>좋아요·댓글·저장 참여율</p></article>
+        <article><div><span>Followers</span><small>↗ 824</small></div><strong data-metric="followers">12,860</strong><p>누적 채널 팔로워</p></article>
+      </div>
+      <div class="dashboard-grid">
+        <article class="panel performance-panel reveal"><div class="panel-head"><div><p class="panel-kicker">Weekly trend</p><h3>조회수 추이</h3></div><div class="legend"><span>Views</span><span>Engagement</span></div></div><div class="line-chart" role="img" aria-label="최근 7주 조회수 상승 추이"><div class="chart-grid"></div><svg viewBox="0 0 700 250" preserveAspectRatio="none" aria-hidden="true"><polyline class="line-main" points="0,210 116,175 233,190 350,120 466,140 583,70 700,35"/><polyline class="line-sub" points="0,225 116,215 233,205 350,190 466,175 583,160 700,145"/></svg><div class="axis"><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span></div></div></article>
+        <article class="panel platform-panel reveal"><div class="panel-head"><div><p class="panel-kicker">By platform</p><h3>채널별 도달</h3></div></div><div class="donut" aria-label="인스타그램 54%, 유튜브 29%, 블로그 17%"><div><strong>86.2K</strong><span>Total Reach</span></div></div><ul class="platform-list"><li><span><i class="wine"></i>Instagram</span><strong>54%</strong></li><li><span><i class="gold"></i>YouTube</span><strong>29%</strong></li><li><span><i class="gray"></i>Blog</span><strong>17%</strong></li></ul></article>
+        <article class="panel format-panel reveal"><div class="panel-head"><div><p class="panel-kicker">Content format</p><h3>유형별 참여율</h3></div></div><div class="bar-list"><div><p><span>Short Form</span><strong>9.4%</strong></p><i><b style="width:94%"></b></i></div><div><p><span>Card News</span><strong>7.8%</strong></p><i><b style="width:78%"></b></i></div><div><p><span>Video</span><strong>6.2%</strong></p><i><b style="width:62%"></b></i></div><div><p><span>Photo</span><strong>4.7%</strong></p><i><b style="width:47%"></b></i></div></div></article>
+        <article class="panel top-panel reveal"><div class="panel-head"><div><p class="panel-kicker">Top content</p><h3>인기 콘텐츠</h3></div></div><ol><li><span>01</span><div><strong>60초 오름 산책</strong><small>Short Form</small></div><b>32.8K</b></li><li><span>02</span><div><strong>골목의 취향을 걷다</strong><small>Card News</small></div><b>24.1K</b></li><li><span>03</span><div><strong>바다 옆 느린 하루</strong><small>Video</small></div><b>18.6K</b></li></ol></article>
+      </div>
+      <div class="insight-note reveal"><p class="eyebrow">Insight note</p><p><strong>짧고 현장감 있는 영상</strong>에서 가장 높은 참여율이 나타났습니다. 다음 콘텐츠는 첫 3초 안에 장소의 핵심 장면을 보여주고, 저장할 만한 정보를 함께 제공하는 방향을 제안합니다.</p><span>※ 현재 수치는 레이아웃 확인을 위한 예시 데이터입니다.</span></div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><p class="footer-label">Tourism content archive</p><h2 class="footer-title">Places become stories.</h2><p class="footer-copy">SK플래닛 관광 콘텐츠 제작 과정과 결과물을 기록합니다.</p></div><div><p class="footer-label">Explore</p><ul class="footer-links"><li><a href="report.html">Report</a></li><li><a href="contents.html">Contents</a></li><li><a href="sns.html">SNS</a></li><li><a href="final.html">Final Project</a></li></ul></div><div><p class="footer-label">Contact</p><ul class="footer-links"><li><a href="mailto:your@email.com">your@email.com</a></li><li><a href="#">Instagram</a></li></ul></div></div><div class="footer-bottom"><span>© <span data-year></span> Tourism Content Archive.</span><span>Designed for SK Planet Project</span></div></div></footer>
+</body></html>

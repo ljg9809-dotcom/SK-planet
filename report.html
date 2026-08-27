@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="관광 자원 조사와 SNS 콘텐츠 기획 자료를 정리한 리포트입니다.">
+  <title>Report — Tourism Content Archive</title>
+  <link rel="stylesheet" href="css/common.css"><link rel="stylesheet" href="css/report.css"><link rel="stylesheet" href="css/responsive.css">
+  <script src="js/common.js" defer></script><script src="js/report.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="홈으로 이동"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text">TOURISM ARCHIVE</span></a><button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span></button><nav class="site-nav" id="site-navigation" aria-label="주요 메뉴"><ul><li><a href="report.html" aria-current="page">REPORT</a></li><li><a href="contents.html">CONTENTS</a></li><li><a href="sns.html">SNS</a></li><li><a href="final.html">FINAL PROJECT</a></li></ul></nav></div></header>
+  <main id="main">
+    <section class="page-hero"><div class="container page-hero-grid"><div class="reveal"><p class="eyebrow">Research archive</p><h1 class="page-title">Report</h1><p class="page-meta">관광 자원을 관찰하고 콘텐츠의 가능성을 발견하는 조사 기록</p></div><div class="page-index" aria-hidden="true">01</div></div></section>
+    <section class="section-sm"><div class="container">
+      <div class="section-head reveal"><div><p class="eyebrow">Resource library</p><h2 class="section-title">관광 자원 조사</h2></div><p class="lede">지역별 관광 자원의 특징과 콘텐츠 활용 아이디어를 한눈에 비교합니다.</p></div>
+      <div class="report-toolbar reveal"><label class="search-box"><span>검색</span><input id="report-search" type="search" placeholder="지역 또는 자원명 검색"></label><label><span>유형</span><select id="report-filter"><option value="all">전체 유형</option><option value="자연">자연</option><option value="문화">문화</option><option value="미식">미식</option></select></label><p class="result-count"><strong id="result-count">4</strong> resources</p></div>
+      <div class="table-wrap reveal">
+        <table><thead><tr><th>지역</th><th>관광 자원명</th><th>유형</th><th>주요 특징</th><th>콘텐츠 활용 아이디어</th><th>상태</th></tr></thead>
+          <tbody id="report-table">
+            <tr data-type="자연"><td data-label="지역">제주</td><td data-label="관광 자원명"><strong>오름 산책로</strong></td><td data-label="유형"><span class="tag">자연</span></td><td data-label="주요 특징">계절마다 달라지는 능선과 풍경</td><td data-label="활용 아이디어">시간대별 숏폼 시리즈</td><td data-label="상태"><span class="status complete">조사 완료</span></td></tr>
+            <tr data-type="문화"><td data-label="지역">서울</td><td data-label="관광 자원명"><strong>서촌 골목</strong></td><td data-label="유형"><span class="tag">문화</span></td><td data-label="주요 특징">한옥과 작은 상점이 공존하는 동네</td><td data-label="활용 아이디어">골목 취향 지도 카드뉴스</td><td data-label="상태"><span class="status progress">기획 중</span></td></tr>
+            <tr data-type="미식"><td data-label="지역">부산</td><td data-label="관광 자원명"><strong>로컬 시장</strong></td><td data-label="유형"><span class="tag">미식</span></td><td data-label="주요 특징">상인과 음식에 담긴 지역 이야기</td><td data-label="활용 아이디어">한 입 인터뷰 영상</td><td data-label="상태"><span class="status ready">자료 수집</span></td></tr>
+            <tr data-type="자연"><td data-label="지역">강릉</td><td data-label="관광 자원명"><strong>해변 산책길</strong></td><td data-label="유형"><span class="tag">자연</span></td><td data-label="주요 특징">바다와 소나무 숲이 이어지는 길</td><td data-label="활용 아이디어">소리 중심 감성 릴스</td><td data-label="상태"><span class="status complete">조사 완료</span></td></tr>
+          </tbody>
+        </table>
+        <p class="no-results" id="no-results" hidden>검색 결과가 없습니다.</p>
+      </div>
+      <p class="empty-note reveal">표의 예시 항목은 실제 조사 자료에 맞춰 복사·수정할 수 있습니다. 참고 링크와 조사 날짜 열도 필요에 따라 추가하세요.</p>
+    </div></section>
+    <section class="section resource-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Busan resource collection</p><h2 class="section-title">주요 관광 자원</h2></div>
+          <p class="lede">부산에서 일상과 야경, 문화를 경험할 수 있는 세 곳을 활동 중심으로 정리했습니다.</p>
+        </div>
+        <div class="resource-card-grid">
+          <article class="resource-card reveal" data-resource="citizens-park">
+            <button class="resource-card-open" type="button" aria-label="부산시민공원 상세 정보 열기" aria-haspopup="dialog"></button>
+            <div class="resource-card-head"><span class="resource-number">01</span><span class="resource-location">BUSAN · BUSANJIN-GU</span></div>
+            <div class="resource-card-body">
+              <p class="resource-label">관광 자원명</p><h3>부산시민공원</h3>
+              <p class="resource-address"><span aria-hidden="true"></span>부산진구 시민공원로 73</p>
+              <div class="resource-detail"><p class="resource-label">대표 유형</p><div class="type-tags"><span>일상 공간</span><span>도심공원</span></div></div>
+              <div class="resource-detail"><p class="resource-label">대표 활동</p><p class="activity-copy">피크닉 · 러닝 · 사진 촬영</p></div>
+            </div>
+          </article>
+          <article class="resource-card resource-card-featured reveal" data-resource="hwangnyeongsan">
+            <button class="resource-card-open" type="button" aria-label="황령산 전망대 상세 정보 열기" aria-haspopup="dialog"></button>
+            <div class="resource-card-head"><span class="resource-number">02</span><span class="resource-location">BUSAN · BUSANJIN-GU</span></div>
+            <div class="resource-card-body">
+              <p class="resource-label">관광 자원명</p><h3>황령산 전망대</h3>
+              <p class="resource-address"><span aria-hidden="true"></span>부산광역시 부산진구 전포동 산50-18</p>
+              <div class="resource-detail"><p class="resource-label">대표 유형</p><div class="type-tags"><span>야간 관광</span><span>산·봉수대</span><span>도심 야경</span><span>드라이브</span></div></div>
+              <div class="resource-detail"><p class="resource-label">대표 활동</p><p class="activity-copy">간단한 등산 · 야경 촬영 · 드라이브 · 일몰 감상 · 커플 데이트</p></div>
+            </div>
+          </article>
+          <article class="resource-card reveal" data-resource="millac-market">
+            <button class="resource-card-open" type="button" aria-label="밀락 더 마켓 상세 정보 열기" aria-haspopup="dialog"></button>
+            <div class="resource-card-head"><span class="resource-number">03</span><span class="resource-location">BUSAN · SUYEONG-GU</span></div>
+            <div class="resource-card-body">
+              <p class="resource-label">관광 자원명</p><h3>밀락 더 마켓</h3>
+              <p class="resource-address"><span aria-hidden="true"></span>부산광역시 수영구 민락수변로17번길 56</p>
+              <div class="resource-detail"><p class="resource-label">대표 유형</p><div class="type-tags"><span>복합문화공간</span><span>F&amp;B</span><span>팝업</span><span>버스킹</span></div></div>
+              <div class="resource-detail"><p class="resource-label">대표 활동</p><p class="activity-copy">팝업 · 먹거리 · 음주</p></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <dialog class="resource-modal" id="resource-modal" aria-labelledby="modal-resource-title">
+    <button class="resource-modal-close" type="button" aria-label="상세 정보 닫기">×</button>
+    <div class="resource-modal-shell">
+      <aside class="resource-modal-nav">
+        <div class="modal-nav-title"><span>RESOURCE</span><strong>카테고리 메뉴</strong></div>
+        <nav aria-label="상세 정보 카테고리">
+          <button class="is-active" type="button" data-modal-target="modal-home"><i aria-hidden="true"></i><span>홈</span></button>
+          <button type="button" data-modal-target="modal-location"><i aria-hidden="true"></i><span>위치정보</span></button>
+          <button type="button" data-modal-target="modal-tenants"><i aria-hidden="true"></i><span>입점 정보</span></button>
+          <button type="button" data-modal-target="modal-popup"><i aria-hidden="true"></i><span>팝업</span></button>
+        </nav>
+        <p class="modal-nav-index" id="modal-resource-index">03 / BUSAN</p>
+      </aside>
+      <div class="resource-modal-content">
+        <section class="modal-section modal-home" id="modal-home">
+          <p class="modal-eyebrow" id="modal-resource-type">복합문화공간 · F&amp;B</p>
+          <h2 id="modal-resource-title">밀락 더 마켓</h2>
+          <p class="modal-summary" id="modal-resource-summary"></p>
+          <dl class="modal-quick-info"><div><dt id="modal-quick-label1">운영시간</dt><dd id="modal-resource-hours"></dd></div><div><dt id="modal-quick-label2">추천 시간</dt><dd id="modal-resource-best-time"></dd></div></dl>
+          <div class="modal-visuals" id="modal-resource-visuals"><div><img id="modal-main-image" alt="" hidden><span>MAIN VIEW</span></div><div><img id="modal-detail-image" alt="" hidden><span>SPACE DETAIL</span></div></div>
+          <div class="modal-tags"><span>관련 태그</span><p id="modal-resource-tags"></p></div>
+        </section>
+        <section class="modal-section" id="modal-location">
+          <div class="modal-section-heading"><span>01</span><div><p>Location information</p><h3 id="modal-location-title">위치정보</h3></div></div>
+          <div class="location-layout"><div class="map-placeholder" id="modal-map"><img id="modal-map-image" alt="" hidden><span>BUSAN</span><i aria-hidden="true"></i><strong id="modal-map-name">밀락 더 마켓</strong><a class="map-external-link" id="modal-map-link" href="#" target="_blank" rel="noopener noreferrer" hidden>네이버 지도에서 크게 보기 <b aria-hidden="true">↗</b></a></div><div class="location-copy"><p class="resource-label">Address</p><strong id="modal-resource-address"></strong><p id="modal-resource-transport"></p><div class="location-tip"><span>TIP</span><p id="modal-resource-tip"></p></div></div></div>
+          <div class="modal-info-tags"><span>관련 태그</span><p id="modal-location-tags"></p></div>
+        </section>
+        <section class="modal-section" id="modal-tenants">
+          <div class="modal-section-heading"><span>02</span><div><p id="modal-category2-kicker">Tenant information</p><h3 id="modal-tenants-title">입점 정보</h3></div></div>
+          <p class="modal-section-intro" id="modal-tenant-intro"></p>
+          <div class="tenant-grid" id="modal-tenant-list"></div>
+          <div class="modal-info-tags"><span>관련 태그</span><p id="modal-tenant-tags"></p></div>
+        </section>
+        <section class="modal-section" id="modal-popup">
+          <div class="modal-section-heading"><span>03</span><div><p id="modal-category3-kicker">Event &amp; Performance</p><h3 id="modal-popup-section-title">팝업 및 공연</h3></div></div>
+          <div class="event-gallery" id="modal-event-gallery">
+            <figure><img id="modal-popup-image" alt=""><figcaption>POP-UP / NIGHT MARKET</figcaption></figure>
+            <figure><img id="modal-performance-image" alt=""><figcaption>PERFORMANCE / OCEAN VIEW STAND</figcaption></figure>
+          </div>
+          <div class="event-info-grid">
+            <article class="event-status"><p class="resource-label" id="modal-primary-label">팝업</p><h4 id="modal-popup-title"></h4><p id="modal-popup-copy"></p><span id="modal-popup-period"></span></article>
+            <article class="performance-info"><p class="resource-label" id="modal-list-label">공연</p><ul id="modal-performance-list"></ul></article>
+          </div>
+          <div class="modal-info-tags"><span>관련 태그</span><p id="modal-event-tags"></p></div>
+          <p class="modal-update-note" id="modal-update-note">팝업 및 프로그램 일정은 운영 상황에 따라 변경될 수 있습니다. 방문 전 공식 채널에서 최신 정보를 확인하세요.</p>
+        </section>
+      </div>
+    </div>
+  </dialog>
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><p class="footer-label">Tourism content archive</p><h2 class="footer-title">Places become stories.</h2><p class="footer-copy">SK플래닛 관광 콘텐츠 제작 과정과 결과물을 기록합니다.</p></div><div><p class="footer-label">Explore</p><ul class="footer-links"><li><a href="report.html">Report</a></li><li><a href="contents.html">Contents</a></li><li><a href="sns.html">SNS</a></li><li><a href="final.html">Final Project</a></li></ul></div><div><p class="footer-label">Contact</p><ul class="footer-links"><li><a href="mailto:your@email.com">your@email.com</a></li><li><a href="#">Instagram</a></li></ul></div></div><div class="footer-bottom"><span>© <span data-year></span> Tourism Content Archive.</span><span>Designed for SK Planet Project</span></div></div></footer>
+</body></html>
