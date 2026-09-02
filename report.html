@@ -79,6 +79,7 @@
           <button type="button" data-modal-target="modal-location"><i aria-hidden="true"></i><span>위치정보</span></button>
           <button type="button" data-modal-target="modal-tenants"><i aria-hidden="true"></i><span>입점 정보</span></button>
           <button type="button" data-modal-target="modal-popup"><i aria-hidden="true"></i><span>팝업</span></button>
+          <button type="button" data-modal-target="modal-card-news" hidden><i aria-hidden="true"></i><span>Card News</span></button>
         </nav>
         <p class="modal-nav-index" id="modal-resource-index">03 / BUSAN</p>
       </aside>
@@ -114,6 +115,22 @@
           </div>
           <div class="modal-info-tags"><span>관련 태그</span><p id="modal-event-tags"></p></div>
           <p class="modal-update-note" id="modal-update-note">팝업 및 프로그램 일정은 운영 상황에 따라 변경될 수 있습니다. 방문 전 공식 채널에서 최신 정보를 확인하세요.</p>
+        </section>
+        <section class="modal-section modal-card-news" id="modal-card-news" hidden>
+          <div class="modal-section-heading"><span>04</span><div><p>Instagram carousel</p><h3>Card News</h3></div></div>
+          <p class="card-news-intro">부산시민공원의 매력을 담은 카드뉴스입니다. 이미지의 왼쪽과 오른쪽을 누르거나 키보드 방향키로 넘겨보세요.</p>
+          <div class="card-news-carousel" id="card-news-carousel" role="region" aria-roledescription="carousel" aria-label="부산시민공원 카드뉴스" tabindex="0">
+            <div class="card-news-stage" aria-live="polite">
+              <img id="card-news-image" src="" alt="">
+              <button class="card-news-hit card-news-prev" type="button" aria-label="이전 카드 보기"><span aria-hidden="true">‹</span></button>
+              <button class="card-news-hit card-news-next" type="button" aria-label="다음 카드 보기"><span aria-hidden="true">›</span></button>
+              <span class="card-news-count" id="card-news-count" aria-hidden="true">1 / 9</span>
+            </div>
+            <div class="card-news-footer">
+              <p><strong id="card-news-title">표지</strong><span id="card-news-status" class="visually-hidden">1번째 카드, 총 9장</span></p>
+              <div class="card-news-dots" id="card-news-dots" aria-label="카드 선택"></div>
+            </div>
+          </div>
         </section>
       </div>
     </div>

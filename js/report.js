@@ -27,7 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
       name: '부산시민공원',
       type: '일상 공간 · 도심공원',
       summary: '부산진구 옛 캠프 하야리아 부지에 조성된 도심공원입니다. 기억·문화·즐거움·자연·참여를 주제로 한 숲길과 역사 공간, 잔디광장과 문화시설을 함께 둘러볼 수 있습니다.',
-      navLabels: ['홈','위치정보','주요 공간','이용 안내'],
+      navLabels: ['홈','위치정보','주요 공간','이용 안내','Card News'],
+      cardNews: [
+        ['assets/images/reports/새 폴더/1.표지.jpg', '표지'],
+        ['assets/images/reports/새 폴더/2.소개.jpg', '소개'],
+        ['assets/images/reports/새 폴더/3.메타세쿼이아길.jpg', '메타세쿼이아길'],
+        ['assets/images/reports/새 폴더/4.잔디광장.jpg', '잔디광장'],
+        ['assets/images/reports/새 폴더/5.왕벚나무 산책길.jpg', '왕벚나무 산책길'],
+        ['assets/images/reports/새 폴더/6.일러스트 스팟.jpg', '일러스트 스팟'],
+        ['assets/images/reports/새 폴더/7.낮 풍경.jpg', '낮 풍경'],
+        ['assets/images/reports/새 폴더/8.밤 풍경.jpg', '밤 풍경'],
+        ['assets/images/reports/새 폴더/9.마무리  + CTA.jpg', '마무리 + CTA']
+      ],
       quickLabel1: '운영시간',
       hours: '매일 05:00–24:00',
       quickLabel2: '이용요금',
@@ -131,6 +142,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const modal = document.querySelector('#resource-modal');
   const modalContent = modal?.querySelector('.resource-modal-content');
   const navButtons = [...(modal?.querySelectorAll('[data-modal-target]') || [])];
+  const cardNewsSection = modal?.querySelector('#modal-card-news');
+  const cardNewsNav = modal?.querySelector('[data-modal-target="modal-card-news"]');
+  const cardNewsImage = modal?.querySelector('#card-news-image');
+  const cardNewsCarousel = modal?.querySelector('#card-news-carousel');
+  const cardNewsDots = modal?.querySelector('#card-news-dots');
+  const cardNewsPrev = modal?.querySelector('.card-news-prev');
+  const cardNewsNext = modal?.querySelector('.card-news-next');
+  let currentCardNews = [];
+  let currentCardIndex = 0;
   const setText = (selector, value) => {
     const target = modal?.querySelector(selector);
     if (target) target.textContent = value;
@@ -257,6 +277,42 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  const showCardNewsSlide = (index) => {
+    if (!currentCardNews.length || !cardNewsImage) return;
+    currentCardIndex = Math.max(0, Math.min(index, currentCardNews.length - 1));
+    const [source, title] = currentCardNews[currentCardIndex];
+    cardNewsImage.src = source;
+    cardNewsImage.alt = `부산시민공원 카드뉴스 ${currentCardIndex + 1} — ${title}`;
+    setText('#card-news-title', title);
+    setText('#card-news-count', `${currentCardIndex + 1} / ${currentCardNews.length}`);
+    setText('#card-news-status', `${currentCardIndex + 1}번째 카드, 총 ${currentCardNews.length}장 — ${title}`);
+    cardNewsPrev.disabled = currentCardIndex === 0;
+    cardNewsNext.disabled = currentCardIndex === currentCardNews.length - 1;
+    [...cardNewsDots.children].forEach((dot, dotIndex) => {
+      const isActive = dotIndex === currentCardIndex;
+      dot.classList.toggle('is-active', isActive);
+      dot.setAttribute('aria-current', isActive ? 'true' : 'false');
+    });
+  };
+
+  const setCardNews = (items = []) => {
+    currentCardNews = items;
+    currentCardIndex = 0;
+    const hasCardNews = items.length > 0;
+    cardNewsNav.hidden = !hasCardNews;
+    cardNewsSection.hidden = !hasCardNews;
+    if (!hasCardNews) return;
+    cardNewsDots.replaceChildren(...items.map(([, title], index) => {
+      const dot = document.createElement('button');
+      dot.className = 'card-news-dot';
+      dot.type = 'button';
+      dot.setAttribute('aria-label', `${index + 1}번 카드 ${title} 보기`);
+      dot.addEventListener('click', () => showCardNewsSlide(index));
+      return dot;
+    }));
+    showCardNewsSlide(0);
+  };
+
   const openResourceModal = (resourceKey) => {
     const data = resourceData[resourceKey];
     if (!data || !modal) return;
@@ -290,6 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setText('#modal-event-tags', data.eventTags || data.tags);
     setMap(data);
     setMainVisuals(data);
+    setCardNews(data.cardNews);
     renderTenants(data.tenants || [], data.tenantGroups);
     renderPerformances(data.performances || [['프로그램 안내', data.popupCopy]]);
     setEventImage('#modal-popup-image', data.popupImage, `${data.name} 야간 팝업 현장`);
@@ -323,8 +380,31 @@ document.addEventListener('DOMContentLoaded', () => {
     navButtons.forEach((item) => item.classList.toggle('is-active', item === button));
   }));
 
+  cardNewsPrev?.addEventListener('click', () => showCardNewsSlide(currentCardIndex - 1));
+  cardNewsNext?.addEventListener('click', () => showCardNewsSlide(currentCardIndex + 1));
+  cardNewsCarousel?.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      showCardNewsSlide(currentCardIndex - 1);
+    }
+    if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      showCardNewsSlide(currentCardIndex + 1);
+    }
+  });
+  let cardTouchStartX = 0;
+  cardNewsCarousel?.addEventListener('touchstart', (event) => {
+    cardTouchStartX = event.changedTouches[0].clientX;
+  }, { passive: true });
+  cardNewsCarousel?.addEventListener('touchend', (event) => {
+    const distance = event.changedTouches[0].clientX - cardTouchStartX;
+    if (Math.abs(distance) < 45) return;
+    showCardNewsSlide(currentCardIndex + (distance < 0 ? 1 : -1));
+  }, { passive: true });
+
   modalContent?.addEventListener('scroll', () => {
-    const sections = navButtons.map((button) => modal.querySelector(`#${button.dataset.modalTarget}`));
+    const visibleButtons = navButtons.filter((button) => !button.hidden);
+    const sections = visibleButtons.map((button) => modal.querySelector(`#${button.dataset.modalTarget}`));
     let activeIndex = 0;
     sections.forEach((section, index) => {
       if (section.offsetTop <= modalContent.scrollTop + 90) activeIndex = index;
@@ -332,6 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalContent.scrollTop + modalContent.clientHeight >= modalContent.scrollHeight - 4) {
       activeIndex = sections.length - 1;
     }
-    navButtons.forEach((button, index) => button.classList.toggle('is-active', index === activeIndex));
+    navButtons.forEach((button) => button.classList.remove('is-active'));
+    visibleButtons[activeIndex]?.classList.add('is-active');
   }, { passive: true });
 });
