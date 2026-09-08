@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="부산의 자전거 여행을 AI 추천 코스와 함께 즐기는 BBC TOUR 서비스 프로젝트입니다.">
+  <title>BBC TOUR Service — Tourism Content Archive</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/service.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/common.js" defer></script>
+  <script src="js/service.js" defer></script>
+</head>
+<body class="service-page">
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="홈으로 이동"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text">TOURISM ARCHIVE</span></a>
+      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-navigation" aria-label="주요 메뉴">
+        <ul><li><a href="report.html">REPORT</a></li><li><a href="contents.html">CONTENTS</a></li><li><a href="sns.html">SNS</a></li><li><a href="final.html">FINAL PROJECT</a></li><li><a href="service.html" aria-current="page">SERVICE</a></li><li><a href="brand.html">BRAND</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="service-hero">
+      <div class="container service-hero-grid">
+        <div class="service-copy reveal">
+          <div class="service-kicker"><span aria-hidden="true">🚲</span> BBC TOUR · BUSAN</div>
+          <p class="eyebrow">Mobile travel service</p>
+          <h1>부산의 바다를 따라<br><em>가볍게, 나답게.</em></h1>
+          <p class="service-lede">AI가 취향과 체력에 맞는 자전거 코스를 추천하고, 부산의 해안 풍경과 로컬 스폿을 한 번의 라이딩으로 연결합니다.</p>
+          <div class="service-actions">
+            <a class="service-btn service-btn-primary" href="https://bbc-prototype.vercel.app/" target="_blank" rel="noopener noreferrer">프로토타입 체험하기 <span aria-hidden="true">↗</span></a>
+            <a class="service-btn" href="#service-preview">코스 살펴보기 <span aria-hidden="true">↓</span></a>
+          </div>
+          <dl class="service-facts">
+            <div><dt>Concept</dt><dd>Eco Riding</dd></div>
+            <div><dt>Location</dt><dd>Busan</dd></div>
+            <div><dt>Platform</dt><dd>Mobile Web</dd></div>
+          </dl>
+        </div>
+
+        <div class="phone-stage reveal" aria-label="BBC TOUR 모바일 서비스 미리보기">
+          <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="phone-shell">
+            <div class="phone-island" aria-hidden="true"></div>
+            <div class="phone-screen">
+              <div class="mobile-top"><strong>10:50</strong><span>5G&nbsp; ▰</span></div>
+              <div class="mobile-head">
+                <a href="service.html" class="bbc-logo" aria-label="BBC TOUR 서비스 홈"><i aria-hidden="true">⌁</i><span><strong>BBC TOUR</strong><small>BUSAN</small></span></a>
+                <button type="button" aria-label="현재 지역">해운대·송정⌄</button>
+                <span class="avatar" aria-hidden="true">JM</span>
+              </div>
+              <div class="mobile-content">
+                <div class="weather-row"><span>♻ 탄소중립 에코 라이딩</span><small>부산 21°C · 산들바람</small></div>
+                <h2>안녕하세요, 지민님! 🌊</h2>
+                <p>오늘 달릴 추천 코스를 확인해보세요.</p>
+                <form class="ai-box" id="ai-demo-form">
+                  <label for="ai-demo-input"><span>✣</span> AI 맞춤 코스 즉시 생성</label>
+                  <div><input id="ai-demo-input" type="text" placeholder="예: 바다 앞 평지 40분"><button type="submit">추천받기 →</button></div>
+                  <small id="ai-demo-message" aria-live="polite">취향을 입력하면 코스가 바로 추천돼요.</small>
+                </form>
+                <div class="mobile-search">⌕ &nbsp; 지역이나 코스 검색</div>
+                <div class="mobile-label"><strong>부산 라이딩 맵 탐색</strong><span>해안풍 쾌적</span></div>
+                <div class="mini-map" aria-hidden="true">
+                  <svg viewBox="0 0 320 140" role="img" aria-label="광안리에서 송정까지 이어지는 자전거 코스 지도">
+                    <path class="map-land" d="M0 105C52 73 76 118 117 78s67 8 108-25 65-26 95-42v129H0Z"/>
+                    <path class="map-route" d="M24 108c43-43 73 9 111-26s71 1 100-30 49-17 69-34"/>
+                    <circle cx="24" cy="108" r="7"/><circle cx="304" cy="18" r="7"/>
+                  </svg>
+                  <span>안전한 자전거 전용도로 94%</span>
+                </div>
+                <article class="mobile-route">
+                  <div class="route-thumb" aria-hidden="true"><span>🌊</span></div>
+                  <div><small>해운대구 · 오션뷰 해안로</small><h3>달맞이길 &amp; 송정 해변로</h3><p><b>7.6 km</b><span>45분</span><span>쉬움</span></p></div>
+                </article>
+              </div>
+              <nav class="mobile-nav" aria-label="서비스 하단 메뉴"><a href="#service-preview" class="active">⌂<span>홈·탐색</span></a><a href="#service-preview">⌁<span>맞춤코스</span></a><a href="#features">◎<span>AI 가이드</span></a><a href="#service-preview">↗<span>기록·공유</span></a></nav>
+            </div>
+          </div>
+          <p class="phone-note">AI COURSE · LIVE MAP · ECO RECORD</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-stats" aria-label="서비스 주요 수치">
+      <div class="container service-stats-grid">
+        <p><strong>04</strong><span>바로 달릴 수 있는 코스</span></p>
+        <p><strong>94<small>%</small></strong><span>자전거 전용도로</span></p>
+        <p><strong>21<small>°C</small></strong><span>현재 부산 라이딩 날씨</span></p>
+        <p><strong>AI</strong><span>취향 기반 즉시 추천</span></p>
+      </div>
+    </section>
+
+    <section class="section service-features" id="features">
+      <div class="container">
+        <div class="service-section-head reveal"><div><p class="service-number">01 / CORE EXPERIENCE</p><h2>여행의 고민은 줄이고,<br>달리는 즐거움은 더하고.</h2></div><p>검색부터 코스 선택, 현장 가이드와 기록까지 자전거 여행의 흐름을 하나의 모바일 경험으로 연결했습니다.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card feature-card-ai reveal"><span>01</span><div class="feature-icon" aria-hidden="true">✣</div><h3>AI 맞춤 코스</h3><p>시간, 체력, 원하는 풍경을 입력하면 지금 달리기 좋은 경로를 제안합니다.</p><small>GEMINI AI RECOMMENDATION</small></article>
+          <article class="feature-card reveal"><span>02</span><div class="feature-icon" aria-hidden="true">⌁</div><h3>실시간 라이딩 맵</h3><p>해안풍과 경사, 자전거도로 비율을 확인하며 부담 없는 코스를 고릅니다.</p><small>LIVE ROUTE EXPLORATION</small></article>
+          <article class="feature-card reveal"><span>03</span><div class="feature-icon" aria-hidden="true">♻</div><h3>에코 라이딩 기록</h3><p>이동 거리와 절감한 탄소를 기록하고 나만의 부산 여행을 공유합니다.</p><small>ECO IMPACT &amp; SHARING</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section route-section" id="service-preview">
+      <div class="container route-layout">
+        <div class="route-intro reveal">
+          <p class="service-number">02 / COURSE PREVIEW</p>
+          <h2>오늘의 부산,<br>어디로 달릴까요?</h2>
+          <p>코스를 선택해 거리와 난이도, AI가 제안하는 라이딩 팁을 확인해보세요.</p>
+          <div class="route-tabs" role="tablist" aria-label="추천 코스 선택">
+            <button type="button" class="is-active" role="tab" aria-selected="true" data-route="haeundae">해운대 · 송정</button>
+            <button type="button" role="tab" aria-selected="false" data-route="dadaepo">다대포 · 몰운대</button>
+            <button type="button" role="tab" aria-selected="false" data-route="yeongdo">영도 · 흰여울</button>
+          </div>
+        </div>
+        <article class="route-detail reveal" aria-live="polite">
+          <div class="route-visual">
+            <div class="route-sun" aria-hidden="true"></div>
+            <svg viewBox="0 0 700 290" aria-hidden="true"><path d="M-40 245C62 180 128 262 215 170S370 207 447 110 591 97 742-12"/><circle cx="36" cy="213" r="10"/><circle cx="620" cy="57" r="10"/></svg>
+            <span class="route-start">광안리</span><span class="route-end">송정</span><small id="route-badge">OCEAN VIEW ROUTE</small>
+          </div>
+          <div class="route-copy">
+            <div><p id="route-area">해운대구 · 오션뷰 해안로</p><h3 id="route-title">달맞이길 &amp; 송정 서핑 해변로</h3></div><span class="route-score"><b id="route-score">97</b>%<small>만족도</small></span>
+          </div>
+          <dl class="route-metrics"><div><dt>거리</dt><dd id="route-distance">7.6 km</dd></div><div><dt>예상 소요</dt><dd id="route-time">45분</dd></div><div><dt>난이도</dt><dd id="route-level">쉬움</dd></div></dl>
+          <p class="route-tip"><span aria-hidden="true">💡</span><strong>AI TIP</strong><em id="route-tip">청사포 다릿돌전망대를 경유하면 시원한 해무를 만날 수 있어요.</em></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="service-cta">
+      <div class="container service-cta-inner reveal"><div><p>READY TO RIDE?</p><h2>부산을 달리는 새로운 방법</h2></div><a href="https://bbc-prototype.vercel.app/" target="_blank" rel="noopener noreferrer">BBC TOUR 시작하기 <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><p class="footer-label">Tourism content archive</p><h2 class="footer-title">Places become stories.</h2><p class="footer-copy">SK플래닛 관광 콘텐츠 제작 과정과 결과물을 기록합니다.</p></div><div><p class="footer-label">Explore</p><ul class="footer-links"><li><a href="report.html">Report</a></li><li><a href="contents.html">Contents</a></li><li><a href="sns.html">SNS</a></li><li><a href="final.html">Final Project</a></li><li><a href="service.html">Service</a></li><li><a href="brand.html">Brand</a></li></ul></div><div><p class="footer-label">Project</p><ul class="footer-links"><li><a href="https://bbc-prototype.vercel.app/" target="_blank" rel="noopener noreferrer">BBC TOUR Prototype ↗</a></li></ul></div></div><div class="footer-bottom"><span>© <span data-year></span> Tourism Content Archive.</span><span>Designed for SK Planet Project</span></div></div></footer>
+</body>
+</html>
