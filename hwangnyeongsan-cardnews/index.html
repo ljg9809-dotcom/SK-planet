@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="황령산 봉수대 5장 모션 카드뉴스">
+  <title>불빛으로 이어진 부산 — 황령산 봉수대</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="motion.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="toolbar">
+      <div>
+        <span class="toolbar__label">MOTION CARD NEWS</span>
+        <strong>황령산 봉수대</strong>
+      </div>
+      <div class="toolbar__actions">
+        <button type="button" id="replay">다시 보기</button>
+        <button type="button" id="staticToggle">정지 화면</button>
+      </div>
+    </header>
+
+    <section class="viewer" aria-label="황령산 봉수대 카드뉴스">
+      <div class="deck" id="deck">
+        <article class="card card--cover is-active" data-card="1" aria-label="1장 표지">
+          <img class="cover-photo motion motion--slow" src="assets/hwangnyeongsan-night.jpg" alt="황령산에서 내려다본 부산 야경">
+          <div class="cover-shade"></div>
+          <img class="explorer explorer--cover motion motion--character" src="assets/pixel-explorer.png" alt="부산의 밤을 바라보는 픽셀 탐험가 캐릭터">
+          <div class="moon-ring motion motion--scale"><span></span></div>
+          <div class="card__top motion motion--eyebrow">
+            <span>BUSAN · NIGHT HERITAGE</span><span>01 / 05</span>
+          </div>
+          <div class="cover-copy">
+            <p class="eyebrow motion motion--eyebrow">427M ABOVE THE CITY</p>
+            <h1 class="motion motion--headline">불빛으로<br>이어진 <em>부산</em></h1>
+            <p class="cover-copy__sub motion motion--body">과거의 봉화부터 오늘의 야경까지<br>황령산 봉수대가 품은 두 개의 시간</p>
+          </div>
+          <div class="scroll-mark motion motion--body"><i></i><span>SWIPE TO EXPLORE</span></div>
+        </article>
+
+        <article class="card card--history" data-card="2" aria-label="2장 역사">
+          <div class="paper-grain"></div>
+          <div class="card__top card__top--dark motion motion--eyebrow">
+            <span>THE SIGNAL</span><span>02 / 05</span>
+          </div>
+          <div class="history-title">
+            <p class="eyebrow eyebrow--orange motion motion--eyebrow">조선의 가장 빠른 알림</p>
+            <h2 class="motion motion--headline">산 위의 불빛은<br><em>긴급 메시지</em>였다</h2>
+          </div>
+          <div class="beacon-visual motion motion--scale" aria-hidden="true">
+            <div class="signal signal--1"></div><div class="signal signal--2"></div><div class="signal signal--3"></div>
+            <div class="flame"><i></i><b></b></div>
+            <div class="beacon-stone">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <img class="explorer explorer--history motion motion--character" src="assets/rice-monkey-torch-v2.png" alt="횃불을 들고 봉수대 옆에 선 쌀숭이 캐릭터">
+          <div class="history-note motion motion--body">
+            <span class="history-note__number">烽</span>
+            <p>바다의 위급한 소식을<br><strong>연기와 불</strong>로 다음 봉수대에 전달했습니다.</p>
+          </div>
+          <div class="timeline motion motion--modules">
+            <div><b>낮</b><span>연기</span></div><i></i><div><b>밤</b><span>불빛</span></div><i></i><div><b>목적</b><span>군사 통신</span></div>
+          </div>
+        </article>
+
+        <article class="card card--view" data-card="3" aria-label="3장 전망">
+          <img class="view-photo motion motion--slow" src="assets/hwangnyeongsan-night.jpg" alt="황령산 전망대의 부산 야경">
+          <div class="view-overlay"></div>
+          <div class="card__top motion motion--eyebrow"><span>THE PANORAMA</span><span>03 / 05</span></div>
+          <div class="view-copy">
+            <p class="eyebrow motion motion--eyebrow">한 자리에서 만나는 부산</p>
+            <h2 class="motion motion--headline">고개를 돌릴 때마다<br><em>다른 도시가 열린다</em></h2>
+          </div>
+          <div class="compass motion motion--scale" aria-label="360도 파노라마 조망">
+            <div class="compass__ring"><span>N</span><span>E</span><span>S</span><span>W</span><i></i></div>
+            <strong>360°</strong><small>PANORAMA</small>
+          </div>
+          <img class="explorer explorer--view motion motion--character" src="assets/pixel-explorer.png" alt="부산 파노라마를 바라보는 픽셀 탐험가 캐릭터">
+          <div class="landmarks motion motion--modules">
+            <span>광안대교</span><span>해운대</span><span>부산 도심</span><span>부산항</span>
+          </div>
+          <p class="view-caption motion motion--body">도심 한가운데 427m, 부산의 낮과 밤을 가장 넓게 만나는 자리.</p>
+        </article>
+
+        <article class="card card--guide" data-card="4" aria-label="4장 방문 가이드">
+          <div class="paper-grain"></div>
+          <div class="card__top card__top--dark motion motion--eyebrow"><span>VISIT GUIDE</span><span>04 / 05</span></div>
+          <div class="guide-title">
+            <p class="eyebrow eyebrow--orange motion motion--eyebrow">놓치지 않는 관람법</p>
+            <h2 class="motion motion--headline">해 지기 <em>30분 전</em>,<br>천천히 올라가세요</h2>
+          </div>
+          <div class="sun-path motion motion--scale" aria-hidden="true">
+            <div class="sun"></div><div class="arc"></div><div class="horizon"></div>
+            <span class="sun-label sun-label--1">DAY</span><span class="sun-label sun-label--2">GOLDEN HOUR</span><span class="sun-label sun-label--3">NIGHT</span>
+          </div>
+          <img class="explorer explorer--guide motion motion--character" src="assets/pixel-explorer.png" alt="일몰을 기다리는 픽셀 탐험가 캐릭터">
+          <div class="tip-grid motion motion--modules">
+            <div class="tip"><span>01</span><b>빛의 변화</b><p>노을부터 야경까지<br>한 번에 감상</p></div>
+            <div class="tip"><span>02</span><b>바람 대비</b><p>정상은 쌀쌀해요<br>겉옷 챙기기</p></div>
+            <div class="tip"><span>03</span><b>안전 우선</b><p>어두운 길에는<br>휴대폰 조명</p></div>
+            <div class="tip"><span>04</span><b>여유 있게</b><p>주말 일몰 전후<br>혼잡 유의</p></div>
+          </div>
+          <p class="guide-foot motion motion--body">전망 공간은 무료 · 상시 개방 <span>* 현장 상황은 방문 전 확인</span></p>
+        </article>
+
+        <article class="card card--final" data-card="5" aria-label="5장 마무리">
+          <img class="final-photo motion motion--slow" src="assets/hwangnyeongsan-night.jpg" alt="황령산에서 바라본 부산의 밤">
+          <div class="final-overlay"></div>
+          <div class="card__top motion motion--eyebrow"><span>SAVE THIS NIGHT</span><span>05 / 05</span></div>
+          <div class="final-copy">
+            <span class="quote motion motion--scale">“</span>
+            <h2 class="motion motion--headline">오늘의 불빛도<br>누군가에게는<br><em>오래 남을 신호</em></h2>
+            <p class="motion motion--body">도시의 역사와 야경이 만나는 곳,<br><strong>황령산 봉수대</strong></p>
+          </div>
+          <img class="explorer explorer--final motion motion--character" src="assets/pixel-explorer.png" alt="부산의 밤을 기억하는 픽셀 탐험가 캐릭터">
+          <div class="save-box motion motion--modules">
+            <span>다음 부산 여행을 위해</span><strong>저장하고 함께 가요</strong><b>↗</b>
+          </div>
+          <p class="credit motion motion--body">PHOTO · 부산광역시 ㅣ DESIGN · MOTION CARD NEWS</p>
+        </article>
+      </div>
+
+      <button class="nav nav--prev" id="prev" type="button" aria-label="이전 카드">←</button>
+      <button class="nav nav--next" id="next" type="button" aria-label="다음 카드">→</button>
+    </section>
+
+    <nav class="pager" aria-label="카드 선택">
+      <button class="is-active" data-go="1"><span></span>01</button>
+      <button data-go="2"><span></span>02</button>
+      <button data-go="3"><span></span>03</button>
+      <button data-go="4"><span></span>04</button>
+      <button data-go="5"><span></span>05</button>
+    </nav>
+    <p class="hint">← → 키로 넘기기 · URL에 <code>?card=3&amp;static=1</code>을 붙이면 개별 정지 화면</p>
+  </main>
+</body>
+</html>
