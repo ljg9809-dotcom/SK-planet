@@ -23,6 +23,22 @@
 .content-card h2 { margin: 8px 0 4px; font-family: var(--serif); font-size: clamp(1.6rem, 2.6vw, 2.7rem); font-weight: 400; line-height: 1.15; }
 .content-card p { margin: 0; color: var(--muted); font-size: .9rem; }
 .content-card[hidden] { display: none; }
+.poster-project { grid-column: 1 / -1; min-width: 0; padding-bottom: 48px; border-bottom: 1px solid var(--line); }
+.poster-inner { width: min(100%, 720px); margin-inline: auto; }
+.poster-image-link { display: block; }
+.poster-image { width: 100%; height: auto; }
+.poster-copy .card-meta { margin-top: 28px; }
+.poster-copy h2 { margin: 12px 0 20px; line-height: 1.3; }
+.poster-copy .poster-description { font-size: 1rem; line-height: 1.9; }
+.poster-details { margin: 28px 0 20px; border-top: 1px solid var(--line); }
+.poster-details > div { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.poster-details dt { color: var(--muted); font-size: .85rem; }
+.poster-details dd { margin: 0; }
+.poster-map-link { color: var(--wine); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+.poster-address { display: inline-block; margin-left: 12px; color: var(--muted); font-size: .9rem; }
+.poster-copy .poster-source { font-size: .75rem; line-height: 1.8; }
+.poster-source a { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 640px) { .poster-address { display: block; margin: 5px 0 0; }.poster-project { padding-bottom: 32px; } }
 .empty-note { margin-top: 72px; }
 .content-dialog { width: min(900px, calc(100% - 32px)); padding: 0; border: 0; background: var(--surface); color: var(--ink); }
 .content-dialog[open] { display: grid; grid-template-columns: 1fr 1fr; }

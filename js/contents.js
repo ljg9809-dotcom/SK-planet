@@ -6,8 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeButton = dialog?.querySelector('.dialog-close');
 
   filters.forEach((button) => button.addEventListener('click', () => {
-    filters.forEach((item) => item.classList.remove('is-active'));
+    filters.forEach((item) => {
+      item.classList.remove('is-active');
+      item.setAttribute('aria-pressed', 'false');
+    });
     button.classList.add('is-active');
+    button.setAttribute('aria-pressed', 'true');
     let visible = 0;
     cards.forEach((card) => {
       card.hidden = button.dataset.filter !== 'all' && card.dataset.category !== button.dataset.filter;
