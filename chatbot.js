@@ -1,15 +1,16 @@
 import {STORAGE_KEY,validateFlow,createState,restoreState,matchQuestion,transition,clampPosition} from './chatbot-core.mjs';
 import {mountInquiryForm} from './inquiry-client.js?v=20261026-3';
+import {publishedFlow} from './chatbot-content.js?v=1';
 
 const create=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text)e.textContent=text;return e;};
 const chatIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-8 8H5l-3 2v-10a9 9 0 0 1 18 0Z"/><path d="M7 10h8M7 14h5"/></svg>';
 let flow;
-try{const response=await fetch(new URL('./chatbot.json',import.meta.url));if(!response.ok)throw Error('config');flow=validateFlow(await response.json());}
+try{try{flow=await publishedFlow()}catch{const response=await fetch(new URL('./chatbot.json',import.meta.url),{cache:'no-store'});if(!response.ok)throw Error('config');flow=validateFlow(await response.json());}}
 catch{const unavailable=create('button','busangi-chat-unavailable','챗봇 안내를 불러오지 못했습니다. 다시 불러오기');unavailable.type='button';unavailable.onclick=()=>location.reload();document.body.append(unavailable);throw Error('등록된 챗봇 설정을 불러올 수 없습니다.');}
 let saved=null;try{saved=sessionStorage.getItem(STORAGE_KEY)}catch{}
 let state=restoreState(flow,saved),dragging=null;
 const host=create('div','busangi-chat-host');
-const launcher=create('button','busangi-chat-launcher');launcher.type='button';launcher.innerHTML=chatIcon;launcher.append(create('span',null,'부산기 안내'));launcher.setAttribute('aria-label',flow.ui.launcher);launcher.setAttribute('aria-controls','busangi-chat-panel');
+const launcher=create('button','busangi-chat-launcher');launcher.type='button';launcher.innerHTML=chatIcon;launcher.append(create('span',null,flow.title));launcher.setAttribute('aria-label',flow.ui.launcher);launcher.setAttribute('aria-controls','busangi-chat-panel');
 const panel=create('section','busangi-chat-panel');panel.id='busangi-chat-panel';panel.setAttribute('aria-labelledby','busangi-chat-title');panel.hidden=true;
 const header=create('header','busangi-chat-header');
 const handle=create('div','busangi-chat-handle');handle.tabIndex=0;handle.setAttribute('aria-label',flow.ui.drag);handle.title=flow.ui.drag;
@@ -48,7 +49,7 @@ function command(action){
   render();persist();
 }
 composer.addEventListener('submit',e=>{e.preventDefault();const text=input.value.trim();if(!text){input.focus();return;}input.value='';const matched=matchQuestion(flow,text);if(matched?.action)return command(matched.action);if(matched?.nodeId)return go(matched.nodeId,text);state.messages=[...state.messages,{role:'user',text},{role:'bot',kind:'fallback'}].slice(-80);render();persist();});
-launcher.onclick=()=>setOpen(!state.open);close.onclick=()=>setOpen(false);
+launcher.onclick=async()=>{if(state.open)return setOpen(false);launcher.disabled=true;try{const latest=await publishedFlow();if(latest.version!==flow.version){flow=latest;state=createState(flow);title.textContent=flow.title;launcher.querySelector('span').textContent=flow.title;launcher.setAttribute('aria-label',flow.ui.launcher);close.setAttribute('aria-label',flow.ui.close);handle.setAttribute('aria-label',flow.ui.drag);handle.title=flow.ui.drag;heading.querySelector('p').textContent=flow.subtitle;input.placeholder=flow.ui.input;input.setAttribute('aria-label',flow.ui.input);send.textContent=flow.ui.send;foot.textContent=flow.ui.privacyNote;for(const b of tools.querySelectorAll('[data-action]'))b.textContent=flow.ui[b.dataset.action];render();}}catch{}finally{launcher.disabled=false;setOpen(true);}};close.onclick=()=>setOpen(false);
 panel.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();setOpen(false)}});
 handle.addEventListener('pointerdown',e=>{if(e.button!==0)return;const r=panel.getBoundingClientRect();dragging={id:e.pointerId,dx:e.clientX-r.left,dy:e.clientY-r.top};handle.setPointerCapture(e.pointerId);panel.classList.add('is-dragging');e.preventDefault();});
 handle.addEventListener('pointermove',e=>{if(!dragging||e.pointerId!==dragging.id)return;state.position={x:e.clientX-dragging.dx,y:e.clientY-dragging.dy};positionPanel();});

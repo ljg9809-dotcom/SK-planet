@@ -10,6 +10,11 @@ test('all menu paths resolve and all nodes are reachable',()=>{
   assert.equal(seen.size,Object.keys(flow.nodes).length);
   assert.equal(flow.nodes.start.buttons.length,3);
 });
+test('admin edits reject broken branches, malformed keywords and executable links',()=>{
+  let copy=structuredClone(flow);copy.nodes[copy.root].buttons.push({label:'bad',next:'missing'});assert.throws(()=>validateFlow(copy));
+  copy=structuredClone(flow);copy.nodes[copy.root].keywords=[null];assert.throws(()=>validateFlow(copy));
+  copy=structuredClone(flow);copy.nodes[copy.root].links=[{label:'unsafe',href:'javascript:alert(1)'}];assert.throws(()=>validateFlow(copy));
+});
 test('Korean and English keywords select registered replies, unknown text has no invented reply',()=>{
   for(const [query,id]of [['부산기','about'],['인스타그램 링크','social'],['관광 장소','report'],['제작 문의','production'],['개인정보 동의','privacy']])assert.equal(matchQuestion(flow,query).nodeId,id);
   assert.equal(matchQuestion(flow,'달나라 감자 축제'),null);

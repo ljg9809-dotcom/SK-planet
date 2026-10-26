@@ -1,8 +1,18 @@
 export const STORAGE_KEY = 'busangi-portfolio-chatbot-v1';
 export function normalizeText(text) {return String(text).normalize('NFKC').toLocaleLowerCase('ko-KR').replace(/[\s\p{P}\p{S}]/gu,'');}
 export function validateFlow(flow) {
-  if(!flow?.nodes?.[flow.root]||!flow.nodes[flow.fallbackTarget])throw Error('Invalid chatbot root');
-  for(const [id,node] of Object.entries(flow.nodes)){if(typeof node.answer!=='string'||!Array.isArray(node.buttons))throw Error('Invalid node '+id);for(const button of node.buttons)if(!flow.nodes[button.next]||!button.label)throw Error('Invalid next node '+id);}
+  if(!flow||!Number.isInteger(flow.version)||flow.version<1||typeof flow.nodes!=='object'||!flow.nodes||Array.isArray(flow.nodes)||typeof flow.root!=='string'||!Object.hasOwn(flow.nodes,flow.root)||!Object.hasOwn(flow.nodes,flow.fallbackTarget))throw Error('시작 단계와 기본 안내 단계를 확인해 주세요.');
+  for(const key of ['title','subtitle','fallback'])if(typeof flow[key]!=='string')throw Error('제목과 기본 안내를 확인해 주세요.');
+  for(const key of ['launcher','close','back','home','reset','input','send','drag','privacyNote','resetNotice'])if(typeof flow.ui?.[key]!=='string')throw Error('화면 문구를 확인해 주세요: '+key);
+  if(!flow.commands||typeof flow.commands!=='object'||Array.isArray(flow.commands))throw Error('명령어를 확인해 주세요.');
+  for(const [action,words]of Object.entries(flow.commands))if(!['back','home','reset'].includes(action)||!Array.isArray(words)||words.some(w=>typeof w!=='string'))throw Error('명령어는 문자열 배열입니다.');
+  for(const [id,node] of Object.entries(flow.nodes)){
+    if(!/^[a-zA-Z0-9_-]{1,80}$/.test(id)||!node||typeof node.question!=='string'||typeof node.answer!=='string'||!Array.isArray(node.buttons))throw Error('질문·답변·버튼을 확인해 주세요: '+id);
+    if(node.keywords!==undefined&&(!Array.isArray(node.keywords)||node.keywords.some(k=>typeof k!=='string')))throw Error('키워드는 문자열 배열입니다: '+id);
+    for(const button of node.buttons)if(!button||!Object.hasOwn(flow.nodes,button.next)||typeof button.label!=='string')throw Error('버튼의 다음 단계를 확인해 주세요: '+id);
+    if(node.form&&!['consultation','information','collaboration','production'].includes(node.form))throw Error('문의 유형을 확인해 주세요: '+id);
+    if(node.links!==undefined&&(!Array.isArray(node.links)||node.links.some(l=>!l||typeof l.label!=='string'||typeof l.href!=='string'||!/^(https?:\/\/|[a-zA-Z0-9_./?#=&%+-]+$)/.test(l.href))))throw Error('링크 주소를 확인해 주세요: '+id);
+  }
   return flow;
 }
 export function matchQuestion(flow,text){

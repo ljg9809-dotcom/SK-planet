@@ -31,7 +31,7 @@ const server = http.createServer((req, res) => {
   const requested = path.resolve(ROOT, `.${pathname}`);
   const relative = path.relative(ROOT, requested);
   const segments = relative.split(path.sep);
-  const allowed = ['index.html', 'report.html', 'contents.html', 'service.html','chatbot.js','chatbot-core.mjs','chatbot.json','chatbot.css','inquiry-client.js','inquiry-config.json'].includes(relative)
+  const allowed = ['index.html', 'report.html', 'contents.html', 'service.html','admin.html','admin.js','admin.css','chatbot-content.js','chatbot.js','chatbot-core.mjs','chatbot.json','chatbot.css','inquiry-client.js','inquiry-config.json'].includes(relative)
     || (['assets', 'js', 'css'].includes(segments[0]) && !segments.some(segment => segment.startsWith('.')));
   if (relative.startsWith('..') || path.isAbsolute(relative) || !allowed) {
     res.writeHead(404);
