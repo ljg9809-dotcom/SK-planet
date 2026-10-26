@@ -1,5 +1,5 @@
 import {STORAGE_KEY,validateFlow,createState,restoreState,matchQuestion,transition,clampPosition} from './chatbot-core.mjs';
-import {mountInquiryForm} from './inquiry-client.js';
+import {mountInquiryForm} from './inquiry-client.js?v=20261026-3';
 
 const create=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text)e.textContent=text;return e;};
 const chatIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-8 8H5l-3 2v-10a9 9 0 0 1 18 0Z"/><path d="M7 10h8M7 14h5"/></svg>';
