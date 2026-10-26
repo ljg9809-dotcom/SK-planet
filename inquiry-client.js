@@ -9,12 +9,12 @@ export function validateInquiry(values){
 }
 export function createPayload(c,v,source){
   validateInquiry(v);const p={...(c.fixedValues||{})};
-  const data={name:v.name?.trim()||null,email:v.email.trim(),message:v.message.trim(),category:c.categories[v.category]||v.category,consent:true,consentAt:new Date().toISOString(),source};
+  const data={name:v.name?.trim()||null,email:v.email.trim(),message:v.message.trim(),category:c.categories[v.category]||v.category,consent:true,consentAt:new Date().toISOString(),privacyVersion:c.privacy.version,requestId:v.requestId,source};
   for(const [key,column]of Object.entries(c.fields||{}))if(column&&Object.hasOwn(data,key))p[column]=data[key];
   return p;
 }
 export async function submitInquiry(c,values,source){
-  validateInquiry(values);if(!isConfigured(c))throw Error('기존 문의 페이지의 Supabase 저장 설정 확인 전으로 접수가 불가한 상태입니다.');
+  validateInquiry(values);if(!isConfigured(c))throw Error('Supabase 문의 저장 연결을 준비 중인 상태입니다.');
   if(c.publishableKey.startsWith('sb_secret_'))throw Error('문의 저장 설정에 사용할 수 없는 키입니다.');
   if(c.publishableKey.startsWith('eyJ')){try{const role=JSON.parse(atob(c.publishableKey.split('.')[1].replace(/-/g,'+').replace(/_/g,'/'))).role;if(role!=='anon')throw Error('role')}catch{throw Error('공개용 문의 저장 키가 아닌 설정입니다.');}}
   const payload=createPayload(c,values,source);const response=await fetch(c.supabaseUrl.replace(/\/$/,'')+'/rest/v1/'+encodeURIComponent(c.table),{method:'POST',headers:{apikey:c.publishableKey,'Content-Type':'application/json',Prefer:'return=minimal'},body:JSON.stringify(payload),signal:AbortSignal.timeout(15000)});
@@ -25,8 +25,7 @@ export async function mountInquiryForm(container,category='consultation',source=
   const c=await loadInquiryConfig(),ready=isConfigured(c),form=el('form',null,'busangi-inquiry-form');
   const status=el('p',null,'busangi-form-status');status.setAttribute('role','status');
   const title=el('h3',c.categories[category]||'문의 접수');form.append(title);
-  if(source==='chatbot'){const full=el('a','전체 문의 페이지에서 작성하기 ↗','busangi-inquiry-page-link');full.href='contact.html?category='+encodeURIComponent(category);form.append(full);}
-  if(!ready){const banner=el('p','문의 저장 연동 준비 중입니다. 기존 문의 페이지의 저장 테이블과 개인정보 안내가 확인되면 접수가 가능한 상태입니다.','busangi-form-pending');form.append(banner);}
+  if(!ready){const banner=el('p','Supabase 문의 저장 연결을 준비 중입니다. 연결 후 이 채팅창 안에서 문의를 접수할 수 있습니다.','busangi-form-pending');form.append(banner);}
   const name=el('input'),email=el('input'),message=el('textarea');
   name.name='name';name.maxLength=80;name.autocomplete='name';email.name='email';email.type='email';email.required=true;email.maxLength=254;email.autocomplete='email';message.name='message';message.required=true;message.maxLength=3000;message.rows=4;
   for(const [labelText,input]of [['이름 (선택)',name],['답변 이메일 (필수)',email],['문의 내용 (필수)',message]]){const label=el('label',labelText);label.append(input);form.append(label);}
@@ -35,9 +34,10 @@ export async function mountInquiryForm(container,category='consultation',source=
   const consent=el('input');consent.type='checkbox';consent.name='privacy_consent';consent.required=true;const check=el('label',null,'busangi-consent');check.append(consent,document.createTextNode('개인정보 수집·이용에 동의합니다. (필수)'));form.append(check);
   const send=el('button',ready?'문의 접수하기':'문의 저장 연동 준비 중','busangi-submit');send.type='submit';send.disabled=!ready;form.append(send,status);
   const stamp=el('p','입력한 개인정보는 대화 기록과 sessionStorage에 저장되지 않습니다.','busangi-form-note');form.append(stamp);
-  let busy=false;
+  let busy=false,requestId;
+  form.addEventListener('input',()=>{if(!busy)requestId=undefined;});
   form.addEventListener('submit',async e=>{e.preventDefault();if(busy||!form.reportValidity())return;busy=true;send.disabled=true;status.textContent='문의 저장 중입니다.';
-    try{await submitInquiry(c,{name:name.value,email:email.value,message:message.value,consent:consent.checked,category},source);form.reset();status.textContent='문의가 정상 접수된 상태입니다. 담당자가 확인 후 이메일로 답변하는 방식입니다.';}
+    try{requestId??=crypto.randomUUID();await submitInquiry(c,{name:name.value,email:email.value,message:message.value,consent:consent.checked,category,requestId},source);form.reset();requestId=undefined;status.textContent='문의가 Supabase에 저장되었습니다. 부산기 포트폴리오 운영자가 확인할 수 있는 문의입니다.';}
     catch(error){status.textContent=error.name==='TimeoutError'?'응답이 지연된 상태입니다. 중복 접수를 피하도록 잠시 후 확인해 주시기 바랍니다.':error.message;}finally{busy=false;send.disabled=!ready;}});
   container.replaceChildren(form);return form;
 }

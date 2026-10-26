@@ -25,9 +25,9 @@ test('session round trip preserves history and strips untrusted or stale state',
   assert.equal('email' in restoreState(flow,JSON.stringify({...s,email:'private@example.com'})),false);
   assert.deepEqual(clampPosition({x:-500,y:1000},390,630,1000,800),{x:8,y:162});
 });
-test('inquiries require consent and valid contact details; form sources share the configured table',async()=>{
-  const c={enabled:true,supabaseUrl:'https://example.supabase.co',publishableKey:'sb_publishable_example',table:'existing_inquiries',fields:{email:'email',message:'content',consent:'consent',consentAt:'consented_at',source:'source'},categories:{production:'제작 문의'},privacy:{controller:'운영자',retention:'답변 완료 후 삭제'}};
-  const v={email:'test@example.com',message:'제작 문의 테스트',consent:true,category:'production'};
+test('chatbot submissions require consent, map audit fields, preserve retry identity and handle failure',async()=>{
+  const c={enabled:true,supabaseUrl:'https://example.supabase.co',publishableKey:'sb_publishable_example',table:'portfolio_inquiries',fields:{category:'category',email:'email',message:'message',consent:'consent',consentAt:'consent_at',source:'source',requestId:'request_id',privacyVersion:'privacy_version'},categories:{production:'제작 문의'},privacy:{controller:'운영자',retention:'답변 완료 후 삭제',version:'2026-10-26'}};
+  const v={email:'test@example.com',message:'제작 문의 테스트',consent:true,category:'production',requestId:'4085d596-f507-4664-aa74-e27c077d3413'};
   assert.throws(()=>client.validateInquiry({...v,consent:false}));
   assert.throws(()=>client.validateInquiry({...v,email:'invalid'}));
   assert.throws(()=>client.validateInquiry({...v,message:' '}));
@@ -35,9 +35,12 @@ test('inquiries require consent and valid contact details; form sources share th
   const original=globalThis.fetch,calls=[];
   globalThis.fetch=async(url,options)=>{calls.push({url,body:JSON.parse(options.body)});return {ok:true}};
   try{
-    await client.submitInquiry(c,v,'chatbot');await client.submitInquiry(c,v,'contact-page');
+    await client.submitInquiry(c,v,'chatbot');await client.submitInquiry(c,v,'chatbot');
     assert.equal(calls[0].url,calls[1].url);assert.equal(calls[0].body.consent,true);
-    assert.equal(calls[0].body.source,'chatbot');assert.equal(calls[1].body.source,'contact-page');
+    assert.equal(calls[0].body.source,'chatbot');assert.equal(calls[1].body.request_id,v.requestId);
+    assert.equal(calls[0].body.privacy_version,c.privacy.version);
+    assert.equal(calls[0].body.category,'제작 문의');
+    const count=calls.length;await assert.rejects(client.submitInquiry(c,{...v,consent:false},'chatbot'));assert.equal(calls.length,count);
     await assert.rejects(client.submitInquiry({...c,publishableKey:'sb_secret_unsafe'},v,'chatbot'));
     globalThis.fetch=async()=>({ok:false});await assert.rejects(client.submitInquiry(c,v,'chatbot'));
   }finally{globalThis.fetch=original;}

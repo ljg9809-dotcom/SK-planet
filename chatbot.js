@@ -5,7 +5,7 @@ const create=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.class
 const chatIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-8 8H5l-3 2v-10a9 9 0 0 1 18 0Z"/><path d="M7 10h8M7 14h5"/></svg>';
 let flow;
 try{const response=await fetch(new URL('./chatbot.json',import.meta.url));if(!response.ok)throw Error('config');flow=validateFlow(await response.json());}
-catch{const unavailable=create('a','busangi-chat-unavailable','챗봇 안내를 불러오지 못했습니다. 문의 페이지 →');unavailable.href='contact.html';document.body.append(unavailable);throw Error('등록된 챗봇 설정을 불러올 수 없습니다.');}
+catch{const unavailable=create('button','busangi-chat-unavailable','챗봇 안내를 불러오지 못했습니다. 다시 불러오기');unavailable.type='button';unavailable.onclick=()=>location.reload();document.body.append(unavailable);throw Error('등록된 챗봇 설정을 불러올 수 없습니다.');}
 let saved=null;try{saved=sessionStorage.getItem(STORAGE_KEY)}catch{}
 let state=restoreState(flow,saved),dragging=null;
 const host=create('div','busangi-chat-host');
