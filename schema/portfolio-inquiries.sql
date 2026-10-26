@@ -1,4 +1,4 @@
--- Review-ready schema. Not applied: public INSERT authorization awaits confirmation.
+-- Applied after explicit user approval: public INSERT only; visitor reads/updates/deletes denied.
 create table public.portfolio_inquiries (
  id uuid primary key default gen_random_uuid(),
  request_id uuid not null unique,

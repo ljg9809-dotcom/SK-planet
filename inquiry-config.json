@@ -1,5 +1,5 @@
 {
-  "enabled": false,
+  "enabled": true,
   "supabaseUrl": "https://foaqbqecoexnmexjiioy.supabase.co",
   "publishableKey": "sb_publishable_ICToz3ocSv1i5ELA_HqN5A_xwX1FfYq",
   "table": "portfolio_inquiries",

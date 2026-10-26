@@ -33,7 +33,7 @@ export async function mountInquiryForm(container,category='consultation',source=
   const purpose=c.privacy?.purpose||'문의 접수 및 답변';notice.append(el('p',`수집 항목: 이름(선택), 이메일, 문의 내용입니다.\n이용 목적: ${purpose}입니다.\n수집·관리 주체: ${c.privacy?.controller||'확인 전'}입니다.\n보유 기간: ${c.privacy?.retention||'확인 전'}입니다.\n동의를 거부할 수 있으며, 동의하지 않으면 문의 접수가 불가한 방식입니다.`));form.append(notice);
   const consent=el('input');consent.type='checkbox';consent.name='privacy_consent';consent.required=true;const check=el('label',null,'busangi-consent');check.append(consent,document.createTextNode('개인정보 수집·이용에 동의합니다. (필수)'));form.append(check);
   const send=el('button',ready?'문의 접수하기':'문의 저장 연동 준비 중','busangi-submit');send.type='submit';send.disabled=!ready;form.append(send,status);
-  const stamp=el('p','입력한 개인정보는 대화 기록과 sessionStorage에 저장되지 않습니다.','busangi-form-note');form.append(stamp);
+  const stamp=el('p','문의는 Supabase에 저장되어 운영자가 확인합니다. 문의 입력값은 대화 기록과 sessionStorage에 저장되지 않습니다. 대화 초기화는 서버에 접수된 문의를 삭제하지 않습니다.','busangi-form-note');form.append(stamp);
   let busy=false,requestId;
   form.addEventListener('input',()=>{if(!busy)requestId=undefined;});
   form.addEventListener('submit',async e=>{e.preventDefault();if(busy||!form.reportValidity())return;busy=true;send.disabled=true;status.textContent='문의 저장 중입니다.';

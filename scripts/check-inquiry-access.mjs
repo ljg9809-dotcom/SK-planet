@@ -1,0 +1,10 @@
+import {readFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const config=JSON.parse(await readFile(new URL('../inquiry-config.json',import.meta.url),'utf8'));
+const url=config.supabaseUrl+'/rest/v1/'+config.table;
+const headers={apikey:config.publishableKey,'Content-Type':'application/json',Prefer:'return=minimal'};
+const read=await fetch(url+'?limit=0',{headers});
+assert.ok([401,403].includes(read.status),'Public reads must be denied');
+const invalid=await fetch(url,{method:'POST',headers,body:JSON.stringify({request_id:crypto.randomUUID(),email:'invalid-consent-test@example.com',message:'Invalid consent must never be stored',category:'제작 문의',consent:false,source:'chatbot'})});
+assert.ok([400,401,403].includes(invalid.status),'Unconsented submissions must fail');
+console.log('PASS: public reads denied; invalid consent rejected. No real inquiry submitted.');

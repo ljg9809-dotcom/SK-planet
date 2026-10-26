@@ -21,7 +21,7 @@
 
 별도 문의 HTML 페이지는 없습니다. 챗봇 내부 폼에서만 문의 종류·이름(선택)·답변 이메일·내용을 입력하고 필수 동의 후 저장하는 구조입니다.
 
-저장 대상은 Supabase busangi_web 프로젝트의 public.portfolio_inquiries 테이블입니다. 테이블 및 anon INSERT 권한은 자동 승인 검토에서 차단되어 아직 적용되지 않았으며 inquiry-config.json의 enabled는 false입니다. 검토 가능한 전체 SQL은 schema/portfolio-inquiries.sql에 있습니다.
+저장 대상은 Supabase busangi_web 프로젝트의 public.portfolio_inquiries 테이블입니다. 사용자가 승인한 anon INSERT 전용 권한과 RLS 정책을 적용했고 inquiry-config.json의 enabled는 true입니다. 적용 SQL은 schema/portfolio-inquiries.sql에 있습니다.
 
 적용 후 운영자는 Supabase 프로젝트의 Table Editor에서 해당 테이블을 열어 문의를 확인할 수 있습니다. 방문자에게는 INSERT만 허용하고 SELECT·UPDATE·DELETE는 허용하지 않는 설계입니다. 문의 내용, 동의 여부·시각·안내 버전, 중복 방지 요청 ID를 기록합니다. service_role·비밀 키는 프런트엔드에 포함하지 않습니다.
 
