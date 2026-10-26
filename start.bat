@@ -8,7 +8,7 @@ if errorlevel 1 (
   pause
   exit /b 1
 )
-start "" "http://localhost:8787/cardnews.html"
+start "" "http://localhost:8787/"
 node server.js
 if errorlevel 1 pause
 
