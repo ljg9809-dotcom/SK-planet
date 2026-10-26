@@ -9,6 +9,7 @@ const PORT = Number(process.env.PORT || 8787);
 const MIME = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
+  '.mjs': 'text/javascript; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
   '.png': 'image/png',
@@ -30,7 +31,7 @@ const server = http.createServer((req, res) => {
   const requested = path.resolve(ROOT, `.${pathname}`);
   const relative = path.relative(ROOT, requested);
   const segments = relative.split(path.sep);
-  const allowed = ['index.html', 'report.html', 'contents.html', 'service.html'].includes(relative)
+  const allowed = ['index.html', 'report.html', 'contents.html', 'service.html','contact.html','chatbot.js','chatbot-core.mjs','chatbot.json','chatbot.css','contact.js','inquiry-client.js','inquiry-config.json'].includes(relative)
     || (['assets', 'js', 'css'].includes(segments[0]) && !segments.some(segment => segment.startsWith('.')));
   if (relative.startsWith('..') || path.isAbsolute(relative) || !allowed) {
     res.writeHead(404);
