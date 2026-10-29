@@ -2,11 +2,14 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="관광 자원 조사와 SNS 콘텐츠 기획 자료를 정리한 리포트입니다.">
+  <meta name="description" content="부산 관광지 10곳의 사진과 장소별 소개를 모은 부산기의 여행 리포트입니다.">
   <title>Report — 부산기</title>
 
+  <script src="js/busan-photo-credits.js" defer></script>
+  <script src="js/busan-tourism.js" defer></script>
   <script src="js/report.js" defer></script>
   <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/busan-tourism.css">
   <script src="js/portfolio.js" defer></script>
 <link rel="stylesheet" href="chatbot.css"></head>
 <body>
@@ -14,21 +17,70 @@
   <header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="부산기 홈"><img src="assets/images/identity/wordmark.png" alt="부산기 손글씨 로고" width="125" height="50"><span>BUSANGI / PORTFOLIO</span></a><nav aria-label="주요 메뉴"><ul><li><a href="index.html">HOME</a></li><li><a href="report.html" aria-current="page">REPORT</a></li><li><a href="contents.html">CONTENTS</a></li><li><a href="service.html">SERVICE</a></li></ul></nav><span class="header-note">부산에서, 좋아하는 것을 기록합니다.</span></div></header>
   <main id="main">
     <section class="page-hero"><div class="container page-hero-grid"><div class="reveal"><p class="eyebrow">Research archive</p><h1 class="page-title">Report</h1><p class="page-meta">관광 자원을 관찰하고 콘텐츠의 가능성을 발견하는 조사 기록</p></div><div class="page-index" aria-hidden="true">01</div></div></section>
-    <section class="section-sm"><div class="container">
-      <div class="section-head reveal"><div><p class="eyebrow">Resource library</p><h2 class="section-title">관광 자원 조사</h2></div><p class="lede">지역별 관광 자원의 특징과 콘텐츠 활용 아이디어를 한눈에 비교합니다.</p></div>
-      <div class="report-toolbar reveal"><label class="search-box"><span>검색</span><input id="report-search" type="search" placeholder="지역 또는 자원명 검색"></label><label><span>유형</span><select id="report-filter"><option value="all">전체 유형</option><option value="자연">자연</option><option value="문화">문화</option><option value="미식">미식</option></select></label><p class="result-count"><strong id="result-count">4</strong> resources</p></div>
-      <div class="table-wrap reveal">
-        <table><thead><tr><th>지역</th><th>관광 자원명</th><th>유형</th><th>주요 특징</th><th>콘텐츠 활용 아이디어</th><th>상태</th></tr></thead>
-          <tbody id="report-table">
-            <tr data-type="자연"><td data-label="지역">제주</td><td data-label="관광 자원명"><strong>오름 산책로</strong></td><td data-label="유형"><span class="tag">자연</span></td><td data-label="주요 특징">계절마다 달라지는 능선과 풍경</td><td data-label="활용 아이디어">시간대별 숏폼 시리즈</td><td data-label="상태"><span class="status complete">조사 완료</span></td></tr>
-            <tr data-type="문화"><td data-label="지역">서울</td><td data-label="관광 자원명"><strong>서촌 골목</strong></td><td data-label="유형"><span class="tag">문화</span></td><td data-label="주요 특징">한옥과 작은 상점이 공존하는 동네</td><td data-label="활용 아이디어">골목 취향 지도 카드뉴스</td><td data-label="상태"><span class="status progress">기획 중</span></td></tr>
-            <tr data-type="미식"><td data-label="지역">부산</td><td data-label="관광 자원명"><strong>로컬 시장</strong></td><td data-label="유형"><span class="tag">미식</span></td><td data-label="주요 특징">상인과 음식에 담긴 지역 이야기</td><td data-label="활용 아이디어">한 입 인터뷰 영상</td><td data-label="상태"><span class="status ready">자료 수집</span></td></tr>
-            <tr data-type="자연"><td data-label="지역">강릉</td><td data-label="관광 자원명"><strong>해변 산책길</strong></td><td data-label="유형"><span class="tag">자연</span></td><td data-label="주요 특징">바다와 소나무 숲이 이어지는 길</td><td data-label="활용 아이디어">소리 중심 감성 릴스</td><td data-label="상태"><span class="status complete">조사 완료</span></td></tr>
-          </tbody>
-        </table>
-        <p class="no-results" id="no-results" hidden>검색 결과가 없습니다.</p>
+    <section class="section-sm busan-collection" aria-labelledby="busan-collection-title"><div class="container">
+      <div class="section-head"><div><p class="eyebrow">Busan, a little further</p><h2 class="section-title" id="busan-collection-title">부산의 또 다른 장면, 10곳</h2><p class="lede">골목과 숲, 바다를 따라 발견하는 부산의 여행지.</p></div><p class="collection-count"><strong>10</strong> PLACES IN BUSAN</p></div>
+      <div class="busan-place-grid" id="busan-place-grid">
+          <article class="place-card">
+            <button class="place-card-button" type="button" data-place="gamcheon" aria-haspopup="dialog" aria-controls="place-dialog" aria-label="감천문화마을 상세 소개 보기">
+              <span class="place-thumbnail"><img src="assets/images/reports/busan/gamcheon.webp" alt="감천문화마을 풍경" width="1200" height="900" fetchpriority="high" decoding="async"></span>
+              <span class="place-caption"><span class="place-name">감천문화마을</span><span class="place-location">사하구 · 감천동</span></span>
+            </button>
+          </article>
+          <article class="place-card">
+            <button class="place-card-button" type="button" data-place="huinnyeoul" aria-haspopup="dialog" aria-controls="place-dialog" aria-label="흰여울문화마을 상세 소개 보기">
+              <span class="place-thumbnail"><img src="assets/images/reports/busan/huinnyeoul.webp" alt="흰여울문화마을 풍경" width="1200" height="900" fetchpriority="high" decoding="async"></span>
+              <span class="place-caption"><span class="place-name">흰여울문화마을</span><span class="place-location">영도구 · 영선동4가</span></span>
+            </button>
+          </article>
+          <article class="place-card">
+            <button class="place-card-button" type="button" data-place="taejongdae" aria-haspopup="dialog" aria-controls="place-dialog" aria-label="태종대 상세 소개 보기">
+              <span class="place-thumbnail"><img src="assets/images/reports/busan/taejongdae.webp" alt="태종대 풍경" width="1200" height="900" fetchpriority="high" decoding="async"></span>
+              <span class="place-caption"><span class="place-name">태종대</span><span class="place-location">영도구 · 동삼동</span></span>
+            </button>
+          </article>
+          <article class="place-card">
+            <button class="place-card-button" type="button" data-place="dadaepo" aria-haspopup="dialog" aria-controls="place-dialog" aria-label="다대포해수욕장 상세 소개 보기">
+              <span class="place-thumbnail"><img src="assets/images/reports/busan/dadaepo.webp" alt="다대포해수욕장 풍경" width="1200" height="900" loading="lazy" decoding="async"></span>
+              <span class="place-caption"><span class="place-name">다대포해수욕장</span><span class="place-location">사하구 · 다대동</span></span>
+            </button>
+          </article>
+          <article class="place-card">
+            <button class="place-card-button" type="button" data-place="songdo" aria-haspopup="dialog" aria-controls="place-dialog" aria-label="송도해수욕장 상세 소개 보기">
+              <span class="place-thumbnail"><img src="assets/images/reports/busan/songdo.webp" alt="송도해수욕장 풍경" width="1200" height="900" loading="lazy" decoding="async"></span>
+              <span class="place-caption"><span class="place-name">송도해수욕장</span><span class="place-location">서구 · 암남동</span></span>
+            </button>
+          </article>
+          <article class="place-card">
+            <button class="place-card-button" type="button" data-place="yongdusan" aria-haspopup="dialog" aria-controls="place-dialog" aria-label="용두산공원 상세 소개 보기">
+              <span class="place-thumbnail"><img src="assets/images/reports/busan/yongdusan.webp" alt="용두산공원 풍경" width="1200" height="900" loading="lazy" decoding="async"></span>
+              <span class="place-caption"><span class="place-name">용두산공원</span><span class="place-location">중구 · 광복동2가</span></span>
+            </button>
+          </article>
+          <article class="place-card">
+            <button class="place-card-button" type="button" data-place="beomeosa" aria-haspopup="dialog" aria-controls="place-dialog" aria-label="범어사 상세 소개 보기">
+              <span class="place-thumbnail"><img src="assets/images/reports/busan/beomeosa.webp" alt="범어사 풍경" width="1200" height="900" loading="lazy" decoding="async"></span>
+              <span class="place-caption"><span class="place-name">범어사</span><span class="place-location">금정구 · 청룡동</span></span>
+            </button>
+          </article>
+          <article class="place-card">
+            <button class="place-card-button" type="button" data-place="yonggungsa" aria-haspopup="dialog" aria-controls="place-dialog" aria-label="해동용궁사 상세 소개 보기">
+              <span class="place-thumbnail"><img src="assets/images/reports/busan/yonggungsa.webp" alt="해동용궁사 풍경" width="1200" height="900" loading="lazy" decoding="async"></span>
+              <span class="place-caption"><span class="place-name">해동용궁사</span><span class="place-location">기장군 · 기장읍</span></span>
+            </button>
+          </article>
+          <article class="place-card">
+            <button class="place-card-button" type="button" data-place="oryukdo" aria-haspopup="dialog" aria-controls="place-dialog" aria-label="오륙도 스카이워크 상세 소개 보기">
+              <span class="place-thumbnail"><img src="assets/images/reports/busan/oryukdo.webp" alt="오륙도 스카이워크 풍경" width="1200" height="900" loading="lazy" decoding="async"></span>
+              <span class="place-caption"><span class="place-name">오륙도 스카이워크</span><span class="place-location">남구 · 용호동</span></span>
+            </button>
+          </article>
+          <article class="place-card">
+            <button class="place-card-button" type="button" data-place="eulsukdo" aria-haspopup="dialog" aria-controls="place-dialog" aria-label="을숙도생태공원 상세 소개 보기">
+              <span class="place-thumbnail"><img src="assets/images/reports/busan/eulsukdo.webp" alt="을숙도생태공원 풍경" width="1200" height="900" loading="lazy" decoding="async"></span>
+              <span class="place-caption"><span class="place-name">을숙도생태공원</span><span class="place-location">사하구 · 하단동</span></span>
+            </button>
+          </article>
       </div>
-      <p class="empty-note reveal">표의 예시 항목은 실제 조사 자료에 맞춰 복사·수정할 수 있습니다. 참고 링크와 조사 날짜 열도 필요에 따라 추가하세요.</p>
     </div></section>
     <section class="section resource-section">
       <div class="container">
@@ -71,6 +123,18 @@
       </div>
     </section>
   </main>
+  <dialog class="place-dialog" id="place-dialog" aria-labelledby="place-title" aria-describedby="place-intro">
+    <button type="button" class="place-dialog-close" aria-label="장소 상세 소개 닫기" autofocus>×</button>
+    <img class="place-dialog-photo" id="place-image" alt="">
+    <div class="place-dialog-copy">
+      <p class="eyebrow" id="place-type"></p><h2 id="place-title"></h2>
+      <p class="place-dialog-location" id="place-location"></p>
+      <p class="place-intro" id="place-intro"></p>
+      <section class="place-dialog-section"><h3>이곳에서 만나는 장면</h3><ul id="place-highlights"></ul></section>
+      <section class="place-dialog-section"><h3>방문 전 알아두기</h3><p id="place-tip"></p></section>
+      <div class="place-dialog-links"><a class="place-map-link" id="place-map" target="_blank" rel="noopener noreferrer">지도에서 위치 보기 ↗</a><a class="place-credit" id="place-credit" target="_blank" rel="noopener noreferrer"></a></div>
+    </div>
+  </dialog>
   <dialog class="resource-modal" id="resource-modal" aria-labelledby="modal-resource-title">
     <button class="resource-modal-close" type="button" aria-label="상세 정보 닫기">×</button>
     <div class="resource-modal-shell">

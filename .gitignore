@@ -1,5 +1,6 @@
 # Project-only secrets
 tools/openai-key.txt
+.env.local
 
 # Generated card backgrounds
 assets/images/cardnews/generated/

@@ -1,26 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const search = document.querySelector('#report-search');
-  const filter = document.querySelector('#report-filter');
-  const rows = [...document.querySelectorAll('#report-table tr')];
-  const count = document.querySelector('#result-count');
-  const empty = document.querySelector('#no-results');
-
-  const updateTable = () => {
-    const query = search.value.trim().toLowerCase();
-    const category = filter.value;
-    let visible = 0;
-    rows.forEach((row) => {
-      const matchesText = row.textContent.toLowerCase().includes(query);
-      const matchesCategory = category === 'all' || row.dataset.type === category;
-      row.hidden = !(matchesText && matchesCategory);
-      if (!row.hidden) visible += 1;
-    });
-    count.textContent = visible;
-    empty.hidden = visible !== 0;
-  };
-  search?.addEventListener('input', updateTable);
-  filter?.addEventListener('change', updateTable);
-
   const resourceData = {
     'citizens-park': {
       index: '01 / BUSANJIN-GU',
