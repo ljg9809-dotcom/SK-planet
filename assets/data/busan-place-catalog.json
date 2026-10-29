@@ -1,0 +1,12 @@
+[
+  {"id":"gamcheon","name":"감천문화마을","districtCode":"26380","aliases":["감천문화마을","부산감천문화마을"]},
+  {"id":"huinnyeoul","name":"흰여울문화마을","districtCode":"26200","aliases":["흰여울문화마을"]},
+  {"id":"taejongdae","name":"태종대","districtCode":"26200","aliases":["태종대","태종대유원지"]},
+  {"id":"dadaepo","name":"다대포해수욕장","districtCode":"26380","aliases":["다대포해수욕장"]},
+  {"id":"songdo","name":"송도해수욕장","districtCode":"26140","aliases":["송도해수욕장","부산송도해수욕장"]},
+  {"id":"yongdusan","name":"용두산공원","districtCode":"26110","aliases":["용두산공원"]},
+  {"id":"beomeosa","name":"범어사","districtCode":"26410","aliases":["범어사"]},
+  {"id":"yonggungsa","name":"해동용궁사","districtCode":"26710","aliases":["해동용궁사"]},
+  {"id":"oryukdo","name":"오륙도 스카이워크","districtCode":"26290","aliases":["오륙도스카이워크"]},
+  {"id":"eulsukdo","name":"을숙도생태공원","districtCode":"26380","aliases":["을숙도생태공원","을숙도공원"]}
+]

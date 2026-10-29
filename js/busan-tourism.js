@@ -1,4 +1,4 @@
-// Curated editorial content. Related-place API data can be joined using each stable id.
+// Editorial introduction; the separate public-data section preserves API provenance and direction.
 const busanPlaces = [
   {
     id: 'gamcheon', name: '감천문화마을', location: '사하구 · 감천동', type: '골목 · 문화',
@@ -67,6 +67,111 @@ document.addEventListener('DOMContentLoaded', () => {
   const dialog = document.querySelector('#place-dialog');
   if (!grid || !dialog) return;
   let trigger = null;
+  let requestController = null;
+  let activePlaceId = null;
+  let selectedCategory = '전체';
+  let visibleLimit = 6;
+  let currentData = null;
+  let snapshotPromise;
+  const dataBody = dialog.querySelector('#place-data-body');
+  const dataStatus = dialog.querySelector('#place-data-status');
+  const list = dialog.querySelector('#place-related-list');
+  const more = dialog.querySelector('#place-related-more');
+  const filters = dialog.querySelector('#place-related-filters');
+  const make = (tag, className, text) => {
+    const element = document.createElement(tag);
+    if (className) element.className = className;
+    if (text !== undefined) element.textContent = text;
+    return element;
+  };
+  const mapUrl = (name, region, district) => `https://map.naver.com/p/search/${encodeURIComponent([region,district,name].filter(Boolean).join(' '))}`;
+
+  function renderRelated() {
+    const incoming = currentData.direction === 'incoming';
+    const items = currentData.related.filter(item=>selectedCategory === '전체' || item.category === selectedCategory);
+    const shown = items.slice(0,visibleLimit);
+    list.replaceChildren(...shown.map(item=>{
+      const row = make('li','place-related-item');
+      const link = make('a','place-related-link');
+      link.href = mapUrl(item.name,item.region,item.district);
+      link.target = '_blank'; link.rel = 'noopener noreferrer';
+      const rank = make('span','place-related-rank',incoming ? '↗' : String(item.rank || '–').padStart(2,'0'));
+      rank.setAttribute('aria-label',incoming ? '이곳으로 연결되는 관광지' : `연관 순위 ${item.rank || '미제공'}위`);
+      const text = make('span','place-related-text');
+      text.append(make('strong','',item.name));
+      text.append(make('span','', [item.region,item.district,item.subcategory || item.category].filter(Boolean).join(' · ')));
+      if (incoming) text.append(make('small','place-incoming-rank',`이 출발지의 목록에서 ${currentData.name} ${item.rank || '–'}위`));
+      const arrow = make('span','place-related-arrow','↗'); arrow.setAttribute('aria-hidden','true');
+      link.append(rank,text,arrow); row.append(link); return row;
+    }));
+    dialog.querySelector('#place-related-count').textContent = `${selectedCategory} ${items.length}곳 중 ${shown.length}곳`;
+    more.hidden = shown.length >= items.length;
+    more.textContent = `장소 더 보기 (${shown.length} / ${items.length})`;
+    [...filters.children].forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.category===selectedCategory)));
+  }
+
+  function renderData(data) {
+    currentData = data;
+    const incoming = data.direction === 'incoming';
+    const month = /^\d{6}$/.test(data.baseYm) ? `${data.baseYm.slice(0,4)}.${data.baseYm.slice(4)} 기준` : '기준월 미제공';
+    dialog.querySelector('#place-data-month').textContent = month;
+    dataStatus.textContent = data.delivery === 'live' ? '한국관광공사 조회 자료' : '한국관광공사 공공데이터 자료';
+    dataBody.hidden = false;
+    const facts = [
+      ['소재 지역',[data.region,data.district].filter(Boolean).join(' · ')],
+      ['관광 분류',data.category.join(' › ') || '제공된 분류 없음'],
+      ['연결 정보',`${data.related.length}곳 · ${incoming ? '이곳으로 연결되는 관광지' : '이곳의 연관 관광지'}`]
+    ];
+    if (data.registrationName && data.registrationName !== data.name) facts.push(['데이터 등록명',data.registrationName]);
+    dialog.querySelector('#place-data-facts').replaceChildren(...facts.map(([label,value])=>{
+      const row = make('div','');row.append(make('dt','',label),make('dd','',value));return row;
+    }));
+    dialog.querySelector('#place-related-intro').textContent = incoming
+      ? `${data.name}을 연관 관광지로 포함한 부산의 출발 장소입니다. 이 장소 자체의 연관 목록은 제공되지 않아, 연결되는 출발지를 보여드립니다.`
+      : `${data.name}과 연결성이 높은 장소를 살펴보세요. 관광지와 음식점, 숙소를 유형별로 모아 여행 동선을 구상할 수 있습니다.`;
+    const categories = ['전체',...new Set(data.related.map(item=>item.category).filter(Boolean))];
+    if (!categories.includes(selectedCategory)) selectedCategory = '전체';
+    filters.replaceChildren(...categories.map(category=>{
+      const count = category==='전체' ? data.related.length : data.related.filter(item=>item.category===category).length;
+      const button = make('button','',`${category} ${count}`);
+      button.type='button';button.dataset.category=category;
+      button.addEventListener('click',()=>{selectedCategory=category;visibleLimit=6;renderRelated();});
+      return button;
+    }));
+    filters.hidden = categories.length < 2;
+    dialog.querySelector('#place-data-note').textContent = incoming
+      ? '출처: 한국관광공사 · 티맵모빌리티 내비게이션 이동 데이터. 표기된 순위는 각 출발지의 연관 목록에서 이곳이 차지한 순위입니다. 출발지 사이의 순위나 실제 방문자 수를 뜻하지 않습니다. 조사 범위는 부산 16개 구·군입니다.'
+      : '출처: 한국관광공사 · 티맵모빌리티 내비게이션 이동 데이터. 순위는 해당 기준월의 연결성을 나타내며, 거리순·여행 만족도·실제 방문자 수를 뜻하지 않습니다. 유형을 선택해도 원자료의 순위를 유지합니다.';
+    dialog.querySelector('#place-data-source').href = data.sourceUrl;
+    renderRelated();
+  }
+
+  async function loadData(place) {
+    requestController?.abort();
+    const controller = new AbortController();
+    requestController = controller;
+    activePlaceId = place.id;
+    selectedCategory = '전체';visibleLimit = 6;currentData = null;
+    dataBody.hidden = true;
+    dialog.querySelector('#place-data-month').textContent = '';
+    dataStatus.textContent = '공공데이터를 불러오는 중입니다.';
+    const stillCurrent = () => !controller.signal.aborted && activePlaceId === place.id && dialog.open;
+    if (!snapshotPromise) snapshotPromise = fetch('assets/data/busan-tourism.json').then(response=>{
+      if (!response.ok) throw new Error('SNAPSHOT_UNAVAILABLE');return response.json();
+    }).catch(()=>{snapshotPromise=null;return null;});
+    const saved = (await snapshotPromise)?.places.find(item=>item.id===place.id);
+    if (!stillCurrent()) return;
+    if (saved) renderData({...saved,delivery:'snapshot'});
+    try {
+      const response = await fetch(`/api/tourism?place=${encodeURIComponent(place.id)}`,{signal:controller.signal});
+      if (!response.ok) throw new Error('DATA_UNAVAILABLE');
+      const data = await response.json();
+      if (stillCurrent()) renderData(data);
+    } catch {
+      if (stillCurrent() && !saved) dataStatus.textContent = '공공데이터를 불러오지 못했습니다. 잠시 후 상세창을 다시 열어주세요.';
+    }
+  }
+  more.addEventListener('click',()=>{visibleLimit+=6;renderRelated();});
 
   function openPlace(place, button) {
     trigger = button;
@@ -91,6 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dialog.showModal();
     dialog.scrollTop = 0;
     document.body.classList.add('place-dialog-open');
+    loadData(place);
   }
 
   grid.querySelectorAll('[data-place]').forEach(button => {
@@ -101,6 +207,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   dialog.querySelector('.place-dialog-close').addEventListener('click', () => dialog.close());
   dialog.addEventListener('close', () => {
+    requestController?.abort();
+    activePlaceId = null;
     document.body.classList.remove('place-dialog-open');
     trigger?.focus({ preventScroll: true });
   });

@@ -132,6 +132,20 @@
       <p class="place-intro" id="place-intro"></p>
       <section class="place-dialog-section"><h3>이곳에서 만나는 장면</h3><ul id="place-highlights"></ul></section>
       <section class="place-dialog-section"><h3>방문 전 알아두기</h3><p id="place-tip"></p></section>
+      <section class="place-dialog-section place-tourism-data" aria-labelledby="place-data-heading">
+        <div class="place-data-heading"><div><p class="eyebrow">Travel connections</p><h3 id="place-data-heading">데이터로 이어보는 여행</h3></div><span id="place-data-month" class="place-data-month"></span></div>
+        <p id="place-data-status" class="place-data-status" role="status">공공데이터를 불러오는 중입니다.</p>
+        <div id="place-data-body" hidden>
+          <dl class="place-data-facts" id="place-data-facts"></dl>
+          <p class="place-related-intro" id="place-related-intro"></p>
+          <div class="place-related-filters" id="place-related-filters" aria-label="연관 장소 유형"></div>
+          <p class="place-related-count" id="place-related-count" role="status"></p>
+          <ol class="place-related-list" id="place-related-list"></ol>
+          <button class="place-related-more" id="place-related-more" type="button" hidden>더 보기</button>
+          <p class="place-data-note" id="place-data-note"></p>
+          <a class="place-data-source" id="place-data-source" href="https://www.data.go.kr/data/15128560/openapi.do" target="_blank" rel="noopener noreferrer">한국관광공사 · 관광지별 연관 관광지 정보 ↗</a>
+        </div>
+      </section>
       <div class="place-dialog-links"><a class="place-map-link" id="place-map" target="_blank" rel="noopener noreferrer">지도에서 위치 보기 ↗</a><a class="place-credit" id="place-credit" target="_blank" rel="noopener noreferrer"></a></div>
     </div>
   </dialog>

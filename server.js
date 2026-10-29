@@ -5,6 +5,9 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = __dirname;
+const envPath = path.join(ROOT, '.env.local');
+if (fs.existsSync(envPath)) process.loadEnvFile(envPath);
+const tourismHandler = require('./api/tourism.js');
 const PORT = Number(process.env.PORT || 8787);
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -27,6 +30,12 @@ const server = http.createServer((req, res) => {
   let pathname;
   try { pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname); }
   catch { res.writeHead(400); return res.end('Bad request'); }
+  if (pathname === '/api/tourism') {
+    return tourismHandler(req, res).catch(() => {
+      if (!res.headersSent) res.writeHead(500, {'Content-Type':'application/json; charset=utf-8'});
+      res.end(JSON.stringify({error:'관광 정보를 불러오지 못했습니다.'}));
+    });
+  }
   if (pathname === '/') pathname = '/index.html';
   const requested = path.resolve(ROOT, `.${pathname}`);
   const relative = path.relative(ROOT, requested);

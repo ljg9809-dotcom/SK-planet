@@ -29,6 +29,33 @@
 .place-map-link{font-size:13px;border-bottom:1px solid var(--ink);padding-bottom:6px}
 .place-credit{font-size:11px;color:var(--muted);text-decoration:underline;text-underline-offset:3px;line-height:1.8}
 body.place-dialog-open{overflow:hidden}
+.place-data-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:18px}
+.place-data-heading .eyebrow{font-size:10px;margin-bottom:6px}
+.place-data-heading h3{font-size:22px;margin-bottom:0}
+.place-data-month{font:12px Consolas,monospace;white-space:nowrap;color:var(--muted)}
+.place-tourism-data .place-data-status{font-size:11px;margin-top:10px;color:var(--muted)}
+.place-data-facts{display:grid;grid-template-columns:1fr 1fr;gap:20px 24px;margin:22px 0;background:var(--soft);padding:22px}
+.place-data-facts dt{font-size:11px;color:var(--muted);margin-bottom:5px}
+.place-data-facts dd{font-size:13px;line-height:1.7}
+.place-tourism-data .place-related-intro{font-size:13px;margin:18px 0}
+.place-related-filters{display:flex;gap:6px;flex-wrap:wrap;margin:20px 0 12px}
+.place-related-filters button{padding:7px 13px;font-size:12px;background:transparent}
+.place-related-filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.place-tourism-data .place-related-count{font-size:11px;margin:0 0 10px}
+.place-related-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.place-related-item{border-bottom:1px solid var(--line)}
+.place-related-link{display:flex;gap:16px;align-items:center;padding:17px 2px}
+.place-related-link:hover .place-related-text strong{text-decoration:underline;text-underline-offset:4px}
+.place-related-rank{font:19px Georgia,serif;min-width:25px;color:var(--muted)}
+.place-related-text{display:flex;flex-direction:column;gap:4px;min-width:0}
+.place-related-text strong{font-size:14px;font-weight:600;overflow-wrap:anywhere}
+.place-related-text>span{font-size:11px;color:var(--muted)}
+.place-related-text .place-incoming-rank{font-size:10px;color:var(--muted)}
+.place-related-arrow{margin-left:auto;padding-left:8px;font-size:16px}
+.place-related-more{display:block;width:100%;font-size:12px;background:transparent;margin-top:16px}
+.place-tourism-data .place-data-note{font-size:11px;line-height:1.85;margin-top:20px}
+.place-data-source{display:inline-block;font-size:11px;color:var(--muted);text-decoration:underline;text-underline-offset:3px;margin-top:12px}
+@media(max-width:600px){.place-data-facts{grid-template-columns:1fr;padding:18px;gap:15px}.place-data-heading{align-items:flex-start;flex-direction:column;gap:8px}.place-data-heading h3{font-size:20px}.place-related-link{gap:10px}.place-related-text strong{font-size:13px}}
 @media(min-width:1500px){.busan-place-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:1000px){.busan-place-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.busan-collection{padding-bottom:55px}.busan-place-grid{gap:26px 16px;padding-top:22px}.place-name{font-size:17px}.place-location{font-size:11px;margin-top:4px}.place-caption{padding-top:12px}.collection-count{margin-top:20px}.place-dialog{width:calc(100% - 20px);max-height:94dvh}.place-dialog-copy{padding:26px 22px}.place-dialog h2{font-size:28px}.place-intro{font-size:14px}.place-dialog-location{font-size:12px}.place-dialog-photo{height:240px}}

@@ -1,0 +1,4562 @@
+{
+  "baseYm": "202609",
+  "fetchedAt": "2026-10-29T06:20:10.533Z",
+  "source": "한국관광공사 · 티맵모빌리티",
+  "sourceUrl": "https://www.data.go.kr/data/15128560/openapi.do",
+  "places": [
+    {
+      "id": "gamcheon",
+      "name": "감천문화마을",
+      "registrationName": "감천문화마을",
+      "tourismId": "b9dab70a4eac8268531bbd26c0ac30aa",
+      "region": "부산광역시",
+      "district": "사하구",
+      "category": [
+        "관광지",
+        "기타관광"
+      ],
+      "baseYm": "202609",
+      "fetchedAt": "2026-10-29T06:20:10.533Z",
+      "direction": "incoming",
+      "related": [
+        {
+          "id": "317b93c5ae74487dfce5c84f98438b07",
+          "name": "부산항영도크루즈터미널",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "",
+          "subcategory": "",
+          "rank": 1
+        },
+        {
+          "id": "ca6e8851e611e1b92c5448d82208acdb",
+          "name": "송도해상케이블카",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "",
+          "subcategory": "",
+          "rank": 1
+        },
+        {
+          "id": "d6dc86e69c840d73ff5067a11c789691",
+          "name": "자갈치시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "",
+          "subcategory": "",
+          "rank": 1
+        },
+        {
+          "id": "59ea4b110be8dd36236ef1fc5e23fd70",
+          "name": "충무동새벽시장",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "",
+          "subcategory": "",
+          "rank": 1
+        },
+        {
+          "id": "8d9967059a6a10be7bbcb1d539f36264",
+          "name": "BIFF광장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "",
+          "subcategory": "",
+          "rank": 1
+        },
+        {
+          "id": "c4da5dda8499661614a6428d0b33bcf3",
+          "name": "임시수도기념관",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "",
+          "subcategory": "",
+          "rank": 2
+        },
+        {
+          "id": "549bc4c4eb4664151739287503544839",
+          "name": "흰여울문화마을",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "",
+          "subcategory": "",
+          "rank": 3
+        },
+        {
+          "id": "5938262c1a40bb1e424180bc8a3d0d55",
+          "name": "닥밭골벽화마을",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "",
+          "subcategory": "",
+          "rank": 4
+        },
+        {
+          "id": "758c635777e440e9da1793c5b9cc4533",
+          "name": "오륙도",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "",
+          "subcategory": "",
+          "rank": 4
+        },
+        {
+          "id": "093231be3cdaa9651091482fbeb0c973",
+          "name": "오륙도스카이워크",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "",
+          "subcategory": "",
+          "rank": 4
+        },
+        {
+          "id": "c8ebd43a29c2e93440cc7ff72a09da0a",
+          "name": "대각사",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "",
+          "subcategory": "",
+          "rank": 5
+        },
+        {
+          "id": "b4c94d6af3a4e36f6458d4ae7a1dbae1",
+          "name": "용두산공원",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "",
+          "subcategory": "",
+          "rank": 5
+        },
+        {
+          "id": "6ab2202f4c97db2a3548a2bbc726e234",
+          "name": "하늘전망대",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "",
+          "subcategory": "",
+          "rank": 5
+        },
+        {
+          "id": "ccf40214e7861046a572df429ee6e389",
+          "name": "국제시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "",
+          "subcategory": "",
+          "rank": 6
+        },
+        {
+          "id": "f6edce2b2c6eb4e26b2ff6310146736d",
+          "name": "아미산전망대",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "",
+          "subcategory": "",
+          "rank": 8
+        },
+        {
+          "id": "b175902d3cb99348a4864f63588f9c77",
+          "name": "부평깡통시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "",
+          "subcategory": "",
+          "rank": 10
+        },
+        {
+          "id": "4f8c6518acd1e6ff053e589e0ac90fa7",
+          "name": "송도해수욕장",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "",
+          "subcategory": "",
+          "rank": 11
+        },
+        {
+          "id": "02d749dc152d840eeea5dcd22c80cf22",
+          "name": "청사포다릿돌전망대",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "",
+          "subcategory": "",
+          "rank": 11
+        },
+        {
+          "id": "e1840a979315dc809efe6bf49041fbe8",
+          "name": "국립일제강제동원역사관",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "",
+          "subcategory": "",
+          "rank": 13
+        },
+        {
+          "id": "88222e7e5f8172698373086e65c1fad1",
+          "name": "해운대해수욕장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "",
+          "subcategory": "",
+          "rank": 15
+        },
+        {
+          "id": "c63b5b337225ae746ba52eb7f398aac1",
+          "name": "광안리해수욕장",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "",
+          "subcategory": "",
+          "rank": 19
+        },
+        {
+          "id": "4dad23067cb5dc93d10954ee6ded9add",
+          "name": "부산박물관",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "",
+          "subcategory": "",
+          "rank": 21
+        },
+        {
+          "id": "8ba72486b485fdf81773832de8ab55c5",
+          "name": "청사포",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "",
+          "subcategory": "",
+          "rank": 23
+        },
+        {
+          "id": "0c89b105f27e03648004bf8955e6a407",
+          "name": "황령산",
+          "region": "부산광역시",
+          "district": "연제구",
+          "category": "",
+          "subcategory": "",
+          "rank": 23
+        },
+        {
+          "id": "9a534489368634e1093d016bb5b5d573",
+          "name": "장림포구",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "",
+          "subcategory": "",
+          "rank": 24
+        },
+        {
+          "id": "d68c2c6af7cf6cb1092154f35a52c1c7",
+          "name": "해동용궁사",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "",
+          "subcategory": "",
+          "rank": 25
+        },
+        {
+          "id": "e3e21c5cd7f25921dfe9713f02ebcd9e",
+          "name": "장림골목시장",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "",
+          "subcategory": "",
+          "rank": 27
+        },
+        {
+          "id": "62b671a97c4e4c6209423dbf3bfa49a8",
+          "name": "동백섬",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "",
+          "subcategory": "",
+          "rank": 30
+        },
+        {
+          "id": "6bd4baec3a9c1c2b8eb1dbf6a2f574e9",
+          "name": "청학배수지전망대",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "",
+          "subcategory": "",
+          "rank": 34
+        },
+        {
+          "id": "f4b4f749a6cdfd734d4512c18b227d6a",
+          "name": "태종대",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "",
+          "subcategory": "",
+          "rank": 36
+        },
+        {
+          "id": "726e790acd02ac59e179290c9d2f624d",
+          "name": "운수사",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "",
+          "subcategory": "",
+          "rank": 39
+        },
+        {
+          "id": "e072c1b4998d4085fa9a342d74a7042f",
+          "name": "부산현대미술관",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "",
+          "subcategory": "",
+          "rank": 43
+        },
+        {
+          "id": "664bcb8aaae12fcedf6b388e569532d8",
+          "name": "벡스코/제1전시장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "",
+          "subcategory": "",
+          "rank": 45
+        },
+        {
+          "id": "724746776b310e4c59e5e1a6650bed03",
+          "name": "황령산전망대",
+          "region": "부산광역시",
+          "district": "연제구",
+          "category": "",
+          "subcategory": "",
+          "rank": 47
+        }
+      ],
+      "hasData": true,
+      "sourceUrl": "https://www.data.go.kr/data/15128560/openapi.do"
+    },
+    {
+      "id": "huinnyeoul",
+      "name": "흰여울문화마을",
+      "registrationName": "흰여울문화마을",
+      "tourismId": "549bc4c4eb4664151739287503544839",
+      "region": "부산광역시",
+      "district": "영도구",
+      "category": [
+        "관광지",
+        "기타관광"
+      ],
+      "baseYm": "202609",
+      "fetchedAt": "2026-10-29T06:20:10.533Z",
+      "direction": "outgoing",
+      "related": [
+        {
+          "id": "f4b4f749a6cdfd734d4512c18b227d6a",
+          "name": "태종대",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "역사유적지",
+          "rank": 1
+        },
+        {
+          "id": "430cef11b1f6bcd40b4ba642743d7e1b",
+          "name": "모모스커피/영도로스터리&커피바",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 2
+        },
+        {
+          "id": "b9dab70a4eac8268531bbd26c0ac30aa",
+          "name": "감천문화마을",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 3
+        },
+        {
+          "id": "3c084e342c5c7955c27bd07463731102",
+          "name": "국립해양박물관",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "전시시설",
+          "rank": 4
+        },
+        {
+          "id": "8c1c1bfc8a2750310c5d1d0695ef74eb",
+          "name": "피아크카페앤베이커리",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 5
+        },
+        {
+          "id": "ca6e8851e611e1b92c5448d82208acdb",
+          "name": "송도해상케이블카",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 6
+        },
+        {
+          "id": "d6dc86e69c840d73ff5067a11c789691",
+          "name": "자갈치시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 7
+        },
+        {
+          "id": "c63b5b337225ae746ba52eb7f398aac1",
+          "name": "광안리해수욕장",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 8
+        },
+        {
+          "id": "4f8c6518acd1e6ff053e589e0ac90fa7",
+          "name": "송도해수욕장",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 9
+        },
+        {
+          "id": "b9772199f0e3db266edf35f0520d616e",
+          "name": "아르떼뮤지엄/부산",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "전시시설",
+          "rank": 10
+        },
+        {
+          "id": "ccf40214e7861046a572df429ee6e389",
+          "name": "국제시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 11
+        },
+        {
+          "id": "b2cd6fdc324c7e59e23f4249c1077c9d",
+          "name": "태종대전망대",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 12
+        },
+        {
+          "id": "09485ccc9e6891848afe25485d9a1f94",
+          "name": "이재모피자/본점",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 13
+        },
+        {
+          "id": "093231be3cdaa9651091482fbeb0c973",
+          "name": "오륙도스카이워크",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 14
+        },
+        {
+          "id": "88222e7e5f8172698373086e65c1fad1",
+          "name": "해운대해수욕장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 15
+        },
+        {
+          "id": "ab2e94ff2b8cf1599c0f785fd9a8388d",
+          "name": "카페385",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 16
+        },
+        {
+          "id": "7ac5723b1829ec4e00a71780ebea6c82",
+          "name": "피아크",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "기타문화관광지",
+          "rank": 17
+        },
+        {
+          "id": "69707e2a65d17c7f4099124af0637b69",
+          "name": "롯데백화점/광복점",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "백화점",
+          "rank": 18
+        },
+        {
+          "id": "584da5dc231bff1b8c8315de30d1ab4e",
+          "name": "올바릇식당/영도점",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 19
+        },
+        {
+          "id": "343e6e572f66d9874341621fbbf8ecc8",
+          "name": "신기커피영도",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 20
+        },
+        {
+          "id": "298555869c05d2c1c551359fb199d560",
+          "name": "백설대학",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 21
+        },
+        {
+          "id": "8d9967059a6a10be7bbcb1d539f36264",
+          "name": "BIFF광장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "테마공원",
+          "rank": 22
+        },
+        {
+          "id": "f1c073e020d5d2d30cbb0aaafddbc329",
+          "name": "빨간등대/영도본점",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 23
+        },
+        {
+          "id": "b175902d3cb99348a4864f63588f9c77",
+          "name": "부평깡통시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 24
+        },
+        {
+          "id": "2541e7b58a76e4324c486141292a1600",
+          "name": "부산역",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 25
+        },
+        {
+          "id": "4a86c619b46e66efe9ac02b85090ecac",
+          "name": "신세계백화점/센텀시티점",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "백화점",
+          "rank": 26
+        },
+        {
+          "id": "553a1099bf1a5568f3e6153e44dbd6c7",
+          "name": "김해국제공항",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 27
+        },
+        {
+          "id": "e8cee2fe409fe41f48c2e74b5ebd01ec",
+          "name": "동삼동불짬뽕/[중식]",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "외국식",
+          "rank": 28
+        },
+        {
+          "id": "80b68dec7a324fdf7d4bc5a5ef023994",
+          "name": "다대포해수욕장",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 29
+        },
+        {
+          "id": "5450fecdab3e998eb0d930d9f329f627",
+          "name": "송도용궁구름다리",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 30
+        },
+        {
+          "id": "9a48cf28d24a8978118c3d29ff29ac42",
+          "name": "합천국밥집",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 31
+        },
+        {
+          "id": "bcd1b316439d72fe22a7f92df9696ffc",
+          "name": "그라치에",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 32
+        },
+        {
+          "id": "24560400320770c512e9e038bc75162f",
+          "name": "마티에부산하버시티호텔",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 33
+        },
+        {
+          "id": "f29629b150d2cd7643f9fc6c9044e3ad",
+          "name": "감지해변",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 34
+        },
+        {
+          "id": "e2509b6a0d75f21dcadfa9cfd64da0f4",
+          "name": "영무파라드호텔/해운대",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 35
+        },
+        {
+          "id": "5273477032d69237c2967e5372966eec",
+          "name": "라발스호텔",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 36
+        },
+        {
+          "id": "758c635777e440e9da1793c5b9cc4533",
+          "name": "오륙도",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 37
+        },
+        {
+          "id": "f9d190f454b7f1ac75ba5ca4b86aeddb",
+          "name": "시타딘커넥트호텔/하리부산",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 38
+        },
+        {
+          "id": "bc8e257824b2a8ff287f1555e28407d4",
+          "name": "한화리조트/해운대",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "숙박",
+          "subcategory": "콘도미니엄",
+          "rank": 39
+        },
+        {
+          "id": "f6cf6f78ec1a3bc93ecd12c4e1d30332",
+          "name": "오구카페",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 40
+        },
+        {
+          "id": "571b63825febd011a74418322cbce104",
+          "name": "신동아시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 41
+        },
+        {
+          "id": "893192c6c5056f78ebcc5d3f526cb22a",
+          "name": "영도조내기고구마역사기념관",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "전시시설",
+          "rank": 42
+        },
+        {
+          "id": "11c7f8c923062ffab4b0d01018334e46",
+          "name": "와인드",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 43
+        },
+        {
+          "id": "c2a65049f23ee105a35fbee6870b0f20",
+          "name": "영도면옥",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 44
+        },
+        {
+          "id": "f2e9033d7bb5b3b49bf124afc5298040",
+          "name": "태종대짬뽕/[중식]",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "외국식",
+          "rank": 45
+        },
+        {
+          "id": "1774bc672eda7c6009674c1ae28dbc3f",
+          "name": "동방밀면",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 46
+        },
+        {
+          "id": "1542415660e1bee8e3fe8bd20945e588",
+          "name": "영도중리해변",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 47
+        },
+        {
+          "id": "b48974af91dc519243108b6898e5b501",
+          "name": "해빙모먼트",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 48
+        },
+        {
+          "id": "3d729366aaea275cb43eb1f8ed4edea5",
+          "name": "영진돼지국밥/본점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 49
+        },
+        {
+          "id": "b2f901134914aafc7bccad9be9d03c5f",
+          "name": "이기대해안산책로",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "기타레저스포츠",
+          "rank": 50
+        }
+      ],
+      "hasData": true,
+      "sourceUrl": "https://www.data.go.kr/data/15128560/openapi.do"
+    },
+    {
+      "id": "taejongdae",
+      "name": "태종대",
+      "registrationName": "태종대",
+      "tourismId": "f4b4f749a6cdfd734d4512c18b227d6a",
+      "region": "부산광역시",
+      "district": "영도구",
+      "category": [
+        "관광지",
+        "역사관광",
+        "역사유적지"
+      ],
+      "baseYm": "202609",
+      "fetchedAt": "2026-10-29T06:20:10.533Z",
+      "direction": "outgoing",
+      "related": [
+        {
+          "id": "3c084e342c5c7955c27bd07463731102",
+          "name": "국립해양박물관",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "전시시설",
+          "rank": 1
+        },
+        {
+          "id": "549bc4c4eb4664151739287503544839",
+          "name": "흰여울문화마을",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 2
+        },
+        {
+          "id": "8c1c1bfc8a2750310c5d1d0695ef74eb",
+          "name": "피아크카페앤베이커리",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 3
+        },
+        {
+          "id": "d6dc86e69c840d73ff5067a11c789691",
+          "name": "자갈치시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 4
+        },
+        {
+          "id": "430cef11b1f6bcd40b4ba642743d7e1b",
+          "name": "모모스커피/영도로스터리&커피바",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 5
+        },
+        {
+          "id": "ccf40214e7861046a572df429ee6e389",
+          "name": "국제시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 6
+        },
+        {
+          "id": "ab2e94ff2b8cf1599c0f785fd9a8388d",
+          "name": "카페385",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 7
+        },
+        {
+          "id": "69707e2a65d17c7f4099124af0637b69",
+          "name": "롯데백화점/광복점",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "백화점",
+          "rank": 8
+        },
+        {
+          "id": "88222e7e5f8172698373086e65c1fad1",
+          "name": "해운대해수욕장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 9
+        },
+        {
+          "id": "4f8c6518acd1e6ff053e589e0ac90fa7",
+          "name": "송도해수욕장",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 10
+        },
+        {
+          "id": "ca6e8851e611e1b92c5448d82208acdb",
+          "name": "송도해상케이블카",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 11
+        },
+        {
+          "id": "c63b5b337225ae746ba52eb7f398aac1",
+          "name": "광안리해수욕장",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 12
+        },
+        {
+          "id": "d68c2c6af7cf6cb1092154f35a52c1c7",
+          "name": "해동용궁사",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "종교성지",
+          "rank": 13
+        },
+        {
+          "id": "c2a65049f23ee105a35fbee6870b0f20",
+          "name": "영도면옥",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 14
+        },
+        {
+          "id": "b175902d3cb99348a4864f63588f9c77",
+          "name": "부평깡통시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 15
+        },
+        {
+          "id": "093231be3cdaa9651091482fbeb0c973",
+          "name": "오륙도스카이워크",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 16
+        },
+        {
+          "id": "b9772199f0e3db266edf35f0520d616e",
+          "name": "아르떼뮤지엄/부산",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "전시시설",
+          "rank": 17
+        },
+        {
+          "id": "176a128dcb3cc49d43f4a00fdf1ecfe5",
+          "name": "목장원",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 18
+        },
+        {
+          "id": "09485ccc9e6891848afe25485d9a1f94",
+          "name": "이재모피자/본점",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 19
+        },
+        {
+          "id": "5450fecdab3e998eb0d930d9f329f627",
+          "name": "송도용궁구름다리",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 20
+        },
+        {
+          "id": "4a86c619b46e66efe9ac02b85090ecac",
+          "name": "신세계백화점/센텀시티점",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "백화점",
+          "rank": 21
+        },
+        {
+          "id": "7d41150332be599ffdf85bc4b325dffc",
+          "name": "샤브20/부산영도점",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 22
+        },
+        {
+          "id": "7ac5723b1829ec4e00a71780ebea6c82",
+          "name": "피아크",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "기타문화관광지",
+          "rank": 23
+        },
+        {
+          "id": "80b68dec7a324fdf7d4bc5a5ef023994",
+          "name": "다대포해수욕장",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 24
+        },
+        {
+          "id": "584da5dc231bff1b8c8315de30d1ab4e",
+          "name": "올바릇식당/영도점",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 25
+        },
+        {
+          "id": "298555869c05d2c1c551359fb199d560",
+          "name": "백설대학",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 26
+        },
+        {
+          "id": "f1c073e020d5d2d30cbb0aaafddbc329",
+          "name": "빨간등대/영도본점",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 27
+        },
+        {
+          "id": "758c635777e440e9da1793c5b9cc4533",
+          "name": "오륙도",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 28
+        },
+        {
+          "id": "bf44234f9b63729e0fe62962a5188523",
+          "name": "송정해수욕장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 29
+        },
+        {
+          "id": "f9d190f454b7f1ac75ba5ca4b86aeddb",
+          "name": "시타딘커넥트호텔/하리부산",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 30
+        },
+        {
+          "id": "7dffd5fd9a018ff2caa49c828786ebde",
+          "name": "복천사",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "종교성지",
+          "rank": 31
+        },
+        {
+          "id": "c3ba17cbe63bdff7652a23dc501a8405",
+          "name": "원지",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 32
+        },
+        {
+          "id": "f6cf6f78ec1a3bc93ecd12c4e1d30332",
+          "name": "오구카페",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 33
+        },
+        {
+          "id": "02d749dc152d840eeea5dcd22c80cf22",
+          "name": "청사포다릿돌전망대",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 34
+        },
+        {
+          "id": "68e500a9c59d83b37f8b7c2c5a8f1329",
+          "name": "진주삼대국밥/영도본점",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 35
+        },
+        {
+          "id": "b9dab70a4eac8268531bbd26c0ac30aa",
+          "name": "감천문화마을",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 36
+        },
+        {
+          "id": "2dc701312da16600fd49bc186e16607c",
+          "name": "에테르",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 37
+        },
+        {
+          "id": "f2e9033d7bb5b3b49bf124afc5298040",
+          "name": "태종대짬뽕/[중식]",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "외국식",
+          "rank": 38
+        },
+        {
+          "id": "e2cb4396b9310ac54f6959ef6388d96b",
+          "name": "제주복국",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 39
+        },
+        {
+          "id": "2b4c34c2be8d8855ef58504465e865f1",
+          "name": "청사포방파제",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 40
+        },
+        {
+          "id": "2541e7b58a76e4324c486141292a1600",
+          "name": "부산역",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 41
+        },
+        {
+          "id": "d9b08877b4f36341a3f5a433c2cee2a5",
+          "name": "왔다식당",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 42
+        },
+        {
+          "id": "40267ecd46fffc43daad489587890a7d",
+          "name": "라운지비",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 43
+        },
+        {
+          "id": "62b671a97c4e4c6209423dbf3bfa49a8",
+          "name": "동백섬",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 44
+        },
+        {
+          "id": "2a9490c35f5312f9b1b245fe218ba926",
+          "name": "미피카페/부산",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 45
+        },
+        {
+          "id": "11c7f8c923062ffab4b0d01018334e46",
+          "name": "와인드",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 46
+        },
+        {
+          "id": "2f93f3e672327c71ba76c43d93a9b2c5",
+          "name": "부산서부버스터미널",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 47
+        },
+        {
+          "id": "317b93c5ae74487dfce5c84f98438b07",
+          "name": "부산항영도크루즈터미널",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 48
+        },
+        {
+          "id": "f445687dcd390e03159564b2eb73f218",
+          "name": "이재모피자/부산역점",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 49
+        },
+        {
+          "id": "812f946251ddd22b2beb0c4e43b439d6",
+          "name": "영도마리노오토캠핑장",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "숙박",
+          "subcategory": "캠핑",
+          "rank": 50
+        }
+      ],
+      "hasData": true,
+      "sourceUrl": "https://www.data.go.kr/data/15128560/openapi.do"
+    },
+    {
+      "id": "dadaepo",
+      "name": "다대포해수욕장",
+      "registrationName": "다대포해수욕장",
+      "tourismId": "80b68dec7a324fdf7d4bc5a5ef023994",
+      "region": "부산광역시",
+      "district": "사하구",
+      "category": [
+        "관광지",
+        "자연관광",
+        "자연경관(하천/해양)"
+      ],
+      "baseYm": "202609",
+      "fetchedAt": "2026-10-29T06:20:10.533Z",
+      "direction": "outgoing",
+      "related": [
+        {
+          "id": "4f8c6518acd1e6ff053e589e0ac90fa7",
+          "name": "송도해수욕장",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 1
+        },
+        {
+          "id": "037c8b66195005ef3d541e191791c527",
+          "name": "스타필드시티/명지",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "관광지",
+          "subcategory": "쇼핑몰",
+          "rank": 2
+        },
+        {
+          "id": "f6edce2b2c6eb4e26b2ff6310146736d",
+          "name": "아미산전망대",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 3
+        },
+        {
+          "id": "8e5645030d7d79144dffe58933a410ac",
+          "name": "을숙도공원",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "도시공원",
+          "rank": 4
+        },
+        {
+          "id": "3d729366aaea275cb43eb1f8ed4edea5",
+          "name": "영진돼지국밥/본점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 5
+        },
+        {
+          "id": "3d65b6165d0d8357a7e20d17163956ee",
+          "name": "김해공항국내선청사",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 6
+        },
+        {
+          "id": "d370e090659fb62031b46eec83ecdc96",
+          "name": "을숙도/피크닉광장",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "도시공원",
+          "rank": 7
+        },
+        {
+          "id": "b20daf5ea158bceb323c3ecc97bba500",
+          "name": "합천일류돼지국밥/본점",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 8
+        },
+        {
+          "id": "12ad9d17588101266f3d38ff0312fafe",
+          "name": "명지시장",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 9
+        },
+        {
+          "id": "e072c1b4998d4085fa9a342d74a7042f",
+          "name": "부산현대미술관",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "전시시설",
+          "rank": 10
+        },
+        {
+          "id": "f4b4f749a6cdfd734d4512c18b227d6a",
+          "name": "태종대",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "역사유적지",
+          "rank": 11
+        },
+        {
+          "id": "4b90bbfc6bc6547ff738b8a53a2c370f",
+          "name": "이재모피자/명지대방점",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 12
+        },
+        {
+          "id": "0c596b9341577b15b4ece5e5173135e1",
+          "name": "맥도날드/부산다대DT점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 13
+        },
+        {
+          "id": "24ae399213c8d5cae5fa16a3168fc432",
+          "name": "낙동강하구에코센터",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 14
+        },
+        {
+          "id": "09485ccc9e6891848afe25485d9a1f94",
+          "name": "이재모피자/본점",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 15
+        },
+        {
+          "id": "2f93f3e672327c71ba76c43d93a9b2c5",
+          "name": "부산서부버스터미널",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 16
+        },
+        {
+          "id": "ea7e95378ed2397d322178e2e6d431d5",
+          "name": "정짓간/신평본점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 17
+        },
+        {
+          "id": "952cd69a93a8ea49d2b6445d6e995b98",
+          "name": "블랙업커피/을숙도점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 18
+        },
+        {
+          "id": "b588ccafa7c78d2e2a98c19834de0008",
+          "name": "카페시온",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 19
+        },
+        {
+          "id": "c63b5b337225ae746ba52eb7f398aac1",
+          "name": "광안리해수욕장",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 20
+        },
+        {
+          "id": "2b0a0716bb8a7d31655cf30854c69b48",
+          "name": "CGV/부산명지",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "관광지",
+          "subcategory": "공연시설",
+          "rank": 21
+        },
+        {
+          "id": "ae901317abf2d1076754be451457aea4",
+          "name": "아트몰링/하단점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "쇼핑몰",
+          "rank": 22
+        },
+        {
+          "id": "2541e7b58a76e4324c486141292a1600",
+          "name": "부산역",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 23
+        },
+        {
+          "id": "737192cc9d132d92144e9a249880cbad",
+          "name": "다대활어재래시장",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 24
+        },
+        {
+          "id": "acf9bff9d08b38876f58ab7c9bf8a454",
+          "name": "롯데시네마/부산장림점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "공연시설",
+          "rank": 25
+        },
+        {
+          "id": "9ef97bf6a998d70b5492874b32608b80",
+          "name": "태종대온천",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "웰니스관광",
+          "rank": 26
+        },
+        {
+          "id": "1c2e5b43ba7f18e3ec4f37fec58a3928",
+          "name": "토북베이커리/강서점",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 27
+        },
+        {
+          "id": "553a1099bf1a5568f3e6153e44dbd6c7",
+          "name": "김해국제공항",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 28
+        },
+        {
+          "id": "f095bb0ff142aaf4bfe42b07fb0a4850",
+          "name": "어라우즈로스터리",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 29
+        },
+        {
+          "id": "fb8b5735228f0083ddbd586e63bed6f7",
+          "name": "이지요661",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 30
+        },
+        {
+          "id": "e3e21c5cd7f25921dfe9713f02ebcd9e",
+          "name": "장림골목시장",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 31
+        },
+        {
+          "id": "906bdd036547d143aa6235c154dda4ed",
+          "name": "카페만디",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 32
+        },
+        {
+          "id": "d1037db88d9c32cbad3cbee48c409fbd",
+          "name": "감천항",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 33
+        },
+        {
+          "id": "42addecc523c170d7fffa6fb5eb8c0f4",
+          "name": "서가앤쿡/부산하단점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 34
+        },
+        {
+          "id": "d6dc86e69c840d73ff5067a11c789691",
+          "name": "자갈치시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 35
+        },
+        {
+          "id": "43413ab1fa800630dccde20ac498da3d",
+          "name": "최뼈다구해장국/2호점",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 36
+        },
+        {
+          "id": "8f3d622d2e466d6e280f1ee4392a2fd2",
+          "name": "브라운도트호텔/다대포해수욕장점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 37
+        },
+        {
+          "id": "21ae681d9367486ce98a619aad9944e6",
+          "name": "카페진목",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 38
+        },
+        {
+          "id": "dd1f75f103648ecc41423bfa17580bd4",
+          "name": "냉수탕가든",
+          "region": "부산광역시",
+          "district": "부산진구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 39
+        },
+        {
+          "id": "4aec336b2a30917d8fd6470b3c8b944c",
+          "name": "롯데시네마/부산명지",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "관광지",
+          "subcategory": "공연시설",
+          "rank": 40
+        },
+        {
+          "id": "4b8aa43fb99d1cd9e19ff54498841f72",
+          "name": "대박터진돈까스",
+          "region": "부산광역시",
+          "district": "북구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 41
+        },
+        {
+          "id": "1a067257ce205e4c47282cb60151e344",
+          "name": "오르디",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 42
+        },
+        {
+          "id": "bc4bc597cd0db6d2f1edf525a0bea607",
+          "name": "해주냉면",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 43
+        },
+        {
+          "id": "549bc4c4eb4664151739287503544839",
+          "name": "흰여울문화마을",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 44
+        },
+        {
+          "id": "88222e7e5f8172698373086e65c1fad1",
+          "name": "해운대해수욕장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 45
+        },
+        {
+          "id": "0b6b315963c91eca5d337d4c415487a8",
+          "name": "BNB라이더카페",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 46
+        },
+        {
+          "id": "9a534489368634e1093d016bb5b5d573",
+          "name": "장림포구",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 47
+        },
+        {
+          "id": "dfffe7bbacf16b9145d731e96844bc0c",
+          "name": "뉴코아아울렛/괴정점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "대형마트",
+          "rank": 48
+        },
+        {
+          "id": "3e290d2dd552328ced3cb0363e27b866",
+          "name": "만호갈미샤브샤브",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 49
+        },
+        {
+          "id": "ca6e8851e611e1b92c5448d82208acdb",
+          "name": "송도해상케이블카",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 50
+        }
+      ],
+      "hasData": true,
+      "sourceUrl": "https://www.data.go.kr/data/15128560/openapi.do"
+    },
+    {
+      "id": "songdo",
+      "name": "송도해수욕장",
+      "registrationName": "송도해수욕장",
+      "tourismId": "4f8c6518acd1e6ff053e589e0ac90fa7",
+      "region": "부산광역시",
+      "district": "서구",
+      "category": [
+        "관광지",
+        "자연관광",
+        "자연경관(하천/해양)"
+      ],
+      "baseYm": "202609",
+      "fetchedAt": "2026-10-29T06:20:10.533Z",
+      "direction": "outgoing",
+      "related": [
+        {
+          "id": "d6dc86e69c840d73ff5067a11c789691",
+          "name": "자갈치시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 1
+        },
+        {
+          "id": "69707e2a65d17c7f4099124af0637b69",
+          "name": "롯데백화점/광복점",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "백화점",
+          "rank": 2
+        },
+        {
+          "id": "80b68dec7a324fdf7d4bc5a5ef023994",
+          "name": "다대포해수욕장",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 3
+        },
+        {
+          "id": "f4b4f749a6cdfd734d4512c18b227d6a",
+          "name": "태종대",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "역사유적지",
+          "rank": 4
+        },
+        {
+          "id": "ccf40214e7861046a572df429ee6e389",
+          "name": "국제시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 5
+        },
+        {
+          "id": "c63b5b337225ae746ba52eb7f398aac1",
+          "name": "광안리해수욕장",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 6
+        },
+        {
+          "id": "549bc4c4eb4664151739287503544839",
+          "name": "흰여울문화마을",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 7
+        },
+        {
+          "id": "b175902d3cb99348a4864f63588f9c77",
+          "name": "부평깡통시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 8
+        },
+        {
+          "id": "bf44234f9b63729e0fe62962a5188523",
+          "name": "송정해수욕장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 9
+        },
+        {
+          "id": "88222e7e5f8172698373086e65c1fad1",
+          "name": "해운대해수욕장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 10
+        },
+        {
+          "id": "b9dab70a4eac8268531bbd26c0ac30aa",
+          "name": "감천문화마을",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 11
+        },
+        {
+          "id": "09485ccc9e6891848afe25485d9a1f94",
+          "name": "이재모피자/본점",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 12
+        },
+        {
+          "id": "23322e28bac2158412abd7bb0c7c4229",
+          "name": "부산항국제여객터미널",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 13
+        },
+        {
+          "id": "dfffe7bbacf16b9145d731e96844bc0c",
+          "name": "뉴코아아울렛/괴정점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "대형마트",
+          "rank": 14
+        },
+        {
+          "id": "b2cd6fdc324c7e59e23f4249c1077c9d",
+          "name": "태종대전망대",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 15
+        },
+        {
+          "id": "176a128dcb3cc49d43f4a00fdf1ecfe5",
+          "name": "목장원",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 16
+        },
+        {
+          "id": "0ab30a53fe621a7055202528014d80ac",
+          "name": "EL16.52",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 17
+        },
+        {
+          "id": "2541e7b58a76e4324c486141292a1600",
+          "name": "부산역",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 18
+        },
+        {
+          "id": "e9052bcdd5b517edd8f72ec045deb1a4",
+          "name": "롯데호텔/부산점",
+          "region": "부산광역시",
+          "district": "부산진구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 19
+        },
+        {
+          "id": "3c084e342c5c7955c27bd07463731102",
+          "name": "국립해양박물관",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "전시시설",
+          "rank": 20
+        },
+        {
+          "id": "7d41150332be599ffdf85bc4b325dffc",
+          "name": "샤브20/부산영도점",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 21
+        },
+        {
+          "id": "1cc0df9a1f5de499fb84d6ba5e900b25",
+          "name": "천마산복합전망대",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 22
+        },
+        {
+          "id": "5450fecdab3e998eb0d930d9f329f627",
+          "name": "송도용궁구름다리",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 23
+        },
+        {
+          "id": "f6cf6f78ec1a3bc93ecd12c4e1d30332",
+          "name": "오구카페",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 24
+        },
+        {
+          "id": "a6f59d6d7c74f2bb3e87874cc2673652",
+          "name": "호텔아델라",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 25
+        },
+        {
+          "id": "537e6941e6a700e328b70f1975345e6a",
+          "name": "맥도날드/부산영도DT점",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 26
+        },
+        {
+          "id": "3d729366aaea275cb43eb1f8ed4edea5",
+          "name": "영진돼지국밥/본점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 27
+        },
+        {
+          "id": "4b90bbfc6bc6547ff738b8a53a2c370f",
+          "name": "이재모피자/명지대방점",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 28
+        },
+        {
+          "id": "553a1099bf1a5568f3e6153e44dbd6c7",
+          "name": "김해국제공항",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 29
+        },
+        {
+          "id": "b85b7d108aa630062047b0afd26c12a7",
+          "name": "구포역",
+          "region": "부산광역시",
+          "district": "북구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 30
+        },
+        {
+          "id": "2f93f3e672327c71ba76c43d93a9b2c5",
+          "name": "부산서부버스터미널",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 31
+        },
+        {
+          "id": "43413ab1fa800630dccde20ac498da3d",
+          "name": "최뼈다구해장국/2호점",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 32
+        },
+        {
+          "id": "3ccdedc105056f0261338e6232081fd5",
+          "name": "부산민주공원",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "도시공원",
+          "rank": 33
+        },
+        {
+          "id": "4f0130868fe171b5c2bf66d416a06ce2",
+          "name": "범어사",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "관광지",
+          "subcategory": "종교성지",
+          "rank": 34
+        },
+        {
+          "id": "b20daf5ea158bceb323c3ecc97bba500",
+          "name": "합천일류돼지국밥/본점",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 35
+        },
+        {
+          "id": "3110d563372bf321ea7c038d0356f171",
+          "name": "장룡수산/본점",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 36
+        },
+        {
+          "id": "996edd741d1609fbaeb5f6b0c7192379",
+          "name": "롯데시네마/광복점",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "공연시설",
+          "rank": 37
+        },
+        {
+          "id": "8e5645030d7d79144dffe58933a410ac",
+          "name": "을숙도공원",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "도시공원",
+          "rank": 38
+        },
+        {
+          "id": "058bffccede0f98a5b60bb6c268ab903",
+          "name": "영도대교포장마차거리",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "음식점기타",
+          "rank": 39
+        },
+        {
+          "id": "dbae294afe20ff112b9ae6583a8962c6",
+          "name": "코스모스분식",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 40
+        },
+        {
+          "id": "ab2e94ff2b8cf1599c0f785fd9a8388d",
+          "name": "카페385",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 41
+        },
+        {
+          "id": "430cef11b1f6bcd40b4ba642743d7e1b",
+          "name": "모모스커피/영도로스터리&커피바",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 42
+        },
+        {
+          "id": "1542415660e1bee8e3fe8bd20945e588",
+          "name": "영도중리해변",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 43
+        },
+        {
+          "id": "cba748a2f22e71b3e3b4dca3d4bc16b5",
+          "name": "윈덤그랜드/부산",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 44
+        },
+        {
+          "id": "9ef97bf6a998d70b5492874b32608b80",
+          "name": "태종대온천",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "웰니스관광",
+          "rank": 45
+        },
+        {
+          "id": "f29629b150d2cd7643f9fc6c9044e3ad",
+          "name": "감지해변",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 46
+        },
+        {
+          "id": "11c7f8c923062ffab4b0d01018334e46",
+          "name": "와인드",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 47
+        },
+        {
+          "id": "ca6e8851e611e1b92c5448d82208acdb",
+          "name": "송도해상케이블카",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 48
+        },
+        {
+          "id": "9de1e2fc3e57049c23e25bc2b16eece2",
+          "name": "그랩디오션/송도",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 49
+        },
+        {
+          "id": "b107a283e477690cf7853f1cbbc4966d",
+          "name": "모모스커피/본점",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 50
+        }
+      ],
+      "hasData": true,
+      "sourceUrl": "https://www.data.go.kr/data/15128560/openapi.do"
+    },
+    {
+      "id": "yongdusan",
+      "name": "용두산공원",
+      "registrationName": "용두산공원",
+      "tourismId": "b4c94d6af3a4e36f6458d4ae7a1dbae1",
+      "region": "부산광역시",
+      "district": "중구",
+      "category": [
+        "관광지",
+        "문화관광",
+        "도시공원"
+      ],
+      "baseYm": "202609",
+      "fetchedAt": "2026-10-29T06:20:10.533Z",
+      "direction": "outgoing",
+      "related": [
+        {
+          "id": "317b93c5ae74487dfce5c84f98438b07",
+          "name": "부산항영도크루즈터미널",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 1
+        },
+        {
+          "id": "d6dc86e69c840d73ff5067a11c789691",
+          "name": "자갈치시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 2
+        },
+        {
+          "id": "5273477032d69237c2967e5372966eec",
+          "name": "라발스호텔",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 3
+        },
+        {
+          "id": "31840caf0af4d0b8bc0e531f601385b6",
+          "name": "지오플레이스",
+          "region": "부산광역시",
+          "district": "부산진구",
+          "category": "관광지",
+          "subcategory": "쇼핑몰",
+          "rank": 4
+        },
+        {
+          "id": "b9dab70a4eac8268531bbd26c0ac30aa",
+          "name": "감천문화마을",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 5
+        },
+        {
+          "id": "452a5cd786c68a95fa96e9d940ac21f8",
+          "name": "커넥트현대/부산",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "관광지",
+          "subcategory": "백화점",
+          "rank": 6
+        },
+        {
+          "id": "4851287f81cca59620e3d6723a29d698",
+          "name": "부산타워",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 7
+        },
+        {
+          "id": "9de1e2fc3e57049c23e25bc2b16eece2",
+          "name": "그랩디오션/송도",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 8
+        },
+        {
+          "id": "571b63825febd011a74418322cbce104",
+          "name": "신동아시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 9
+        },
+        {
+          "id": "b175902d3cb99348a4864f63588f9c77",
+          "name": "부평깡통시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 10
+        },
+        {
+          "id": "d68c2c6af7cf6cb1092154f35a52c1c7",
+          "name": "해동용궁사",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "종교성지",
+          "rank": 11
+        },
+        {
+          "id": "5d1d3c1b8a25880e1972a609dd3c2323",
+          "name": "초량불백",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 12
+        },
+        {
+          "id": "430cef11b1f6bcd40b4ba642743d7e1b",
+          "name": "모모스커피/영도로스터리&커피바",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 13
+        },
+        {
+          "id": "69707e2a65d17c7f4099124af0637b69",
+          "name": "롯데백화점/광복점",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "백화점",
+          "rank": 14
+        },
+        {
+          "id": "f9d190f454b7f1ac75ba5ca4b86aeddb",
+          "name": "시타딘커넥트호텔/하리부산",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 15
+        },
+        {
+          "id": "eaa81702d59cd45f8d10062010b96f21",
+          "name": "코모도호텔/부산",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 16
+        },
+        {
+          "id": "5450fecdab3e998eb0d930d9f329f627",
+          "name": "송도용궁구름다리",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 17
+        },
+        {
+          "id": "0a3600564358c4b66379057e0c9c0b09",
+          "name": "부산항/제3부두",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 18
+        },
+        {
+          "id": "bf44234f9b63729e0fe62962a5188523",
+          "name": "송정해수욕장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 19
+        },
+        {
+          "id": "e9052bcdd5b517edd8f72ec045deb1a4",
+          "name": "롯데호텔/부산점",
+          "region": "부산광역시",
+          "district": "부산진구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 20
+        },
+        {
+          "id": "8877984a63c9640ad6a4dec3ef934719",
+          "name": "롯데백화점/부산본점",
+          "region": "부산광역시",
+          "district": "부산진구",
+          "category": "관광지",
+          "subcategory": "백화점",
+          "rank": 21
+        },
+        {
+          "id": "4f8c6518acd1e6ff053e589e0ac90fa7",
+          "name": "송도해수욕장",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 22
+        },
+        {
+          "id": "5792a97ca4fbd118419c6a7e8c175e5c",
+          "name": "동생말전망대",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 23
+        },
+        {
+          "id": "b3aa1a0663faf984f5d0731b377d5768",
+          "name": "부산항북항크루즈터미널",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 24
+        },
+        {
+          "id": "9ef97bf6a998d70b5492874b32608b80",
+          "name": "태종대온천",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "웰니스관광",
+          "rank": 25
+        },
+        {
+          "id": "ccf40214e7861046a572df429ee6e389",
+          "name": "국제시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 26
+        },
+        {
+          "id": "45b2cae152004240ea842618dd93eef8",
+          "name": "중구기사식당",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 27
+        },
+        {
+          "id": "99d6a11a2a10ff161b6b6f0e8166a2c9",
+          "name": "UN기념공원",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "도시공원",
+          "rank": 28
+        },
+        {
+          "id": "549bc4c4eb4664151739287503544839",
+          "name": "흰여울문화마을",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 29
+        },
+        {
+          "id": "986cfeba42ee1839ece5fb4a3502c4d3",
+          "name": "민락회타운",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 30
+        },
+        {
+          "id": "058bffccede0f98a5b60bb6c268ab903",
+          "name": "영도대교포장마차거리",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "음식점기타",
+          "rank": 31
+        },
+        {
+          "id": "b915db33cec714c9edd0d3d0055fbdec",
+          "name": "스탠포드호텔/부산",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 32
+        },
+        {
+          "id": "553a1099bf1a5568f3e6153e44dbd6c7",
+          "name": "김해국제공항",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 33
+        },
+        {
+          "id": "b2cd6fdc324c7e59e23f4249c1077c9d",
+          "name": "태종대전망대",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 34
+        },
+        {
+          "id": "09f06495298e6cb21e3068807b5b2289",
+          "name": "망양로산복도로전시관",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "관광지",
+          "subcategory": "전시시설",
+          "rank": 35
+        },
+        {
+          "id": "62e59347473188f83db7d6d675fb667f",
+          "name": "제이비디자인호텔",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "숙박",
+          "subcategory": "모텔",
+          "rank": 36
+        },
+        {
+          "id": "25278086cd6bcfb73e5a6bf6489d0f13",
+          "name": "롯데면세점/부산점",
+          "region": "부산광역시",
+          "district": "부산진구",
+          "category": "관광지",
+          "subcategory": "면세점",
+          "rank": 37
+        },
+        {
+          "id": "e6a11fd0044b4036908a3b9988cb43a0",
+          "name": "도모헌",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "관광지",
+          "subcategory": "기타문화관광지",
+          "rank": 38
+        },
+        {
+          "id": "e95fbdfd6dfc4e46d8c6caa889fc788d",
+          "name": "스카이라인루지/부산",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "기타레저스포츠",
+          "rank": 39
+        },
+        {
+          "id": "2541e7b58a76e4324c486141292a1600",
+          "name": "부산역",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 40
+        },
+        {
+          "id": "94a457ffa82c211a32cddaca855db552",
+          "name": "파라미온호텔",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 41
+        },
+        {
+          "id": "a6f59d6d7c74f2bb3e87874cc2673652",
+          "name": "호텔아델라",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 42
+        },
+        {
+          "id": "215a1a1a47a3cca610e3493836babaf7",
+          "name": "솔라리아니시테츠호텔/부산점",
+          "region": "부산광역시",
+          "district": "부산진구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 43
+        },
+        {
+          "id": "8c1c1bfc8a2750310c5d1d0695ef74eb",
+          "name": "피아크카페앤베이커리",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 44
+        },
+        {
+          "id": "99557751574801a681e0af5cebaf9e68",
+          "name": "하운드호텔",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 45
+        },
+        {
+          "id": "447cef11aa81a5bce2eaeb1c9199edb8",
+          "name": "삼진어묵당/영도본점",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 46
+        },
+        {
+          "id": "d3a6c1909ebec629dce00f018edbe268",
+          "name": "SEA LIFE 부산아쿠아리움",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "테마공원",
+          "rank": 47
+        },
+        {
+          "id": "bc617c08d642062344fe3d7fad8f6659",
+          "name": "토요코인호텔/부산서면점",
+          "region": "부산광역시",
+          "district": "부산진구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 48
+        },
+        {
+          "id": "53ec66b19d13fc3fbc2b7ae82e5a6c6f",
+          "name": "부산명물횟집",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 49
+        },
+        {
+          "id": "b9772199f0e3db266edf35f0520d616e",
+          "name": "아르떼뮤지엄/부산",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "전시시설",
+          "rank": 50
+        }
+      ],
+      "hasData": true,
+      "sourceUrl": "https://www.data.go.kr/data/15128560/openapi.do"
+    },
+    {
+      "id": "beomeosa",
+      "name": "범어사",
+      "registrationName": "범어사",
+      "tourismId": "4f0130868fe171b5c2bf66d416a06ce2",
+      "region": "부산광역시",
+      "district": "금정구",
+      "category": [
+        "관광지",
+        "역사관광",
+        "종교성지"
+      ],
+      "baseYm": "202609",
+      "fetchedAt": "2026-10-29T06:20:10.533Z",
+      "direction": "outgoing",
+      "related": [
+        {
+          "id": "b107a283e477690cf7853f1cbbc4966d",
+          "name": "모모스커피/본점",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 1
+        },
+        {
+          "id": "b7f672e99e2ba0086438205bc5ff73a0",
+          "name": "더팜471",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 2
+        },
+        {
+          "id": "844fb3b8a638bb5869a3855271556b10",
+          "name": "롯데프리미엄아울렛/동부산점",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "쇼핑몰",
+          "rank": 3
+        },
+        {
+          "id": "bc8e257824b2a8ff287f1555e28407d4",
+          "name": "한화리조트/해운대",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "숙박",
+          "subcategory": "콘도미니엄",
+          "rank": 4
+        },
+        {
+          "id": "addc035131d9404ebed363a53779ecce",
+          "name": "홍법사",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "관광지",
+          "subcategory": "종교성지",
+          "rank": 5
+        },
+        {
+          "id": "6aadfe3b786143893318a75d574fb927",
+          "name": "포구나무집",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 6
+        },
+        {
+          "id": "69cd773e03530b95e35f87cb3b04db59",
+          "name": "부산종합버스터미널",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 7
+        },
+        {
+          "id": "d68c2c6af7cf6cb1092154f35a52c1c7",
+          "name": "해동용궁사",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "종교성지",
+          "rank": 8
+        },
+        {
+          "id": "e49cd31f665d32306a4e64fe3b1cc467",
+          "name": "로스팅웨어/부산",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 9
+        },
+        {
+          "id": "4a86c619b46e66efe9ac02b85090ecac",
+          "name": "신세계백화점/센텀시티점",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "백화점",
+          "rank": 10
+        },
+        {
+          "id": "97c87332dcc8d15a6a153a12053cdd8f",
+          "name": "스타벅스/금정남산동DT점",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 11
+        },
+        {
+          "id": "88222e7e5f8172698373086e65c1fad1",
+          "name": "해운대해수욕장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 12
+        },
+        {
+          "id": "41570d8ed626296166f45c368593a3dd",
+          "name": "허심청",
+          "region": "부산광역시",
+          "district": "동래구",
+          "category": "관광지",
+          "subcategory": "웰니스관광",
+          "rank": 13
+        },
+        {
+          "id": "3ba9da86596b8c80aa2cdfbb6e284627",
+          "name": "셀라스/범어사점",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 14
+        },
+        {
+          "id": "7de1357914ab2cfe267a59b273bb5d2d",
+          "name": "신세계사이먼/부산프리미엄아울렛",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "쇼핑몰",
+          "rank": 15
+        },
+        {
+          "id": "b0968edd06bafd87921b0d69dba6f16d",
+          "name": "이흥용과자점/두실점",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 16
+        },
+        {
+          "id": "d0f9776721863d5cd6c59680ac8f5499",
+          "name": "구포촌국수",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 17
+        },
+        {
+          "id": "4f8c6518acd1e6ff053e589e0ac90fa7",
+          "name": "송도해수욕장",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 18
+        },
+        {
+          "id": "bf44234f9b63729e0fe62962a5188523",
+          "name": "송정해수욕장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 19
+        },
+        {
+          "id": "69707e2a65d17c7f4099124af0637b69",
+          "name": "롯데백화점/광복점",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "백화점",
+          "rank": 20
+        },
+        {
+          "id": "dd03a5202c7a84d1e9c01a6299db9644",
+          "name": "혜원정사",
+          "region": "부산광역시",
+          "district": "연제구",
+          "category": "관광지",
+          "subcategory": "종교성지",
+          "rank": 21
+        },
+        {
+          "id": "3db72ca109c25c17075c00e4c1d3cb57",
+          "name": "스포원파크",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "관광지",
+          "subcategory": "도시공원",
+          "rank": 22
+        },
+        {
+          "id": "7dffd5fd9a018ff2caa49c828786ebde",
+          "name": "복천사",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "종교성지",
+          "rank": 23
+        },
+        {
+          "id": "161a15c9c9243960797f688ef9d44d47",
+          "name": "소원사",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "종교성지",
+          "rank": 24
+        },
+        {
+          "id": "3d471808efa9de6a383488e8fde57d15",
+          "name": "티원",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 25
+        },
+        {
+          "id": "19b8a5cc6c869578881b3d3c27d4e170",
+          "name": "이흥용과자점/구서직영점",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 26
+        },
+        {
+          "id": "607153e3e7e879a86c9505cd5bcb1860",
+          "name": "대변항",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 27
+        },
+        {
+          "id": "553a1099bf1a5568f3e6153e44dbd6c7",
+          "name": "김해국제공항",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 28
+        },
+        {
+          "id": "162517080f0cd939084bd4319530e0be",
+          "name": "로띠포레스트",
+          "region": "부산광역시",
+          "district": "동래구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 29
+        },
+        {
+          "id": "7865ea02379f93aecd242ae0167309f9",
+          "name": "F1963",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "관광지",
+          "subcategory": "기타문화관광지",
+          "rank": 30
+        },
+        {
+          "id": "2e4166ab50efc36e38063d7d759e3c38",
+          "name": "감나무집",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 31
+        },
+        {
+          "id": "f613f4ecad8189d1397a9aa3baa0411c",
+          "name": "제빵소작",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 32
+        },
+        {
+          "id": "1257b03391acd0b5cad0827e6f86462e",
+          "name": "화포천어탕",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 33
+        },
+        {
+          "id": "75c5b40b29bb8de9076905dfdb862f1b",
+          "name": "금정한정식/[한식]",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 34
+        },
+        {
+          "id": "aa0fa6ed80ba42e61cdf37e3ce69d30d",
+          "name": "경주집",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 35
+        },
+        {
+          "id": "4a938f85fcef6d66c5d0e2a3b97ffcf5",
+          "name": "청송맷돌순두부",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 36
+        },
+        {
+          "id": "3da27eb046a7c1916f060c289ed68158",
+          "name": "범일돼지국밥",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 37
+        },
+        {
+          "id": "765f081f8f7143324614e613a4b4a5ce",
+          "name": "기장시장",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 38
+        },
+        {
+          "id": "519854d37d8b338373eef29222624080",
+          "name": "수안커피컴퍼니/커피하우스",
+          "region": "부산광역시",
+          "district": "동래구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 39
+        },
+        {
+          "id": "178a20849e6a0a1e9817d4e3abe49079",
+          "name": "육수재",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 40
+        },
+        {
+          "id": "945e99f83de15398966a12631429b3b6",
+          "name": "맥도날드/부산구서DT점",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 41
+        },
+        {
+          "id": "70e6890cfe8aabcf171d5704ac9876b3",
+          "name": "죽성드림세트장",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "기타문화관광지",
+          "rank": 42
+        },
+        {
+          "id": "294d0863e2f5c50ed5d32698d8c016d0",
+          "name": "봉평막국수/동래점",
+          "region": "부산광역시",
+          "district": "동래구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 43
+        },
+        {
+          "id": "debef399cb0df2661f3126e8075c0412",
+          "name": "박해윤통영해물밥상/동래점",
+          "region": "부산광역시",
+          "district": "동래구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 44
+        },
+        {
+          "id": "e88713ef6fc4f2dae71c86d05454cd57",
+          "name": "케이프",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 45
+        },
+        {
+          "id": "356711eed6765eb3c3d107a417558f4f",
+          "name": "국제밀면/본점",
+          "region": "부산광역시",
+          "district": "연제구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 46
+        },
+        {
+          "id": "59ea4b110be8dd36236ef1fc5e23fd70",
+          "name": "충무동새벽시장",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 47
+        },
+        {
+          "id": "e8511fad9d89de4c91ca5f85fd339d2f",
+          "name": "배비장보쌈/구서본점",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 48
+        },
+        {
+          "id": "2f93f3e672327c71ba76c43d93a9b2c5",
+          "name": "부산서부버스터미널",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 49
+        },
+        {
+          "id": "6751d1e616212f494a4e2641ad8b1a32",
+          "name": "나비다",
+          "region": "부산광역시",
+          "district": "금정구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 50
+        }
+      ],
+      "hasData": true,
+      "sourceUrl": "https://www.data.go.kr/data/15128560/openapi.do"
+    },
+    {
+      "id": "yonggungsa",
+      "name": "해동용궁사",
+      "registrationName": "해동용궁사",
+      "tourismId": "d68c2c6af7cf6cb1092154f35a52c1c7",
+      "region": "부산광역시",
+      "district": "기장군",
+      "category": [
+        "관광지",
+        "역사관광",
+        "종교성지"
+      ],
+      "baseYm": "202609",
+      "fetchedAt": "2026-10-29T06:20:10.533Z",
+      "direction": "outgoing",
+      "related": [
+        {
+          "id": "844fb3b8a638bb5869a3855271556b10",
+          "name": "롯데프리미엄아울렛/동부산점",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "쇼핑몰",
+          "rank": 1
+        },
+        {
+          "id": "bf44234f9b63729e0fe62962a5188523",
+          "name": "송정해수욕장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 2
+        },
+        {
+          "id": "765f081f8f7143324614e613a4b4a5ce",
+          "name": "기장시장",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 3
+        },
+        {
+          "id": "896e8201e9e7cd3dcc7ec2adaeda2465",
+          "name": "아난티앳부산코브",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 4
+        },
+        {
+          "id": "88222e7e5f8172698373086e65c1fad1",
+          "name": "해운대해수욕장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 5
+        },
+        {
+          "id": "7de1357914ab2cfe267a59b273bb5d2d",
+          "name": "신세계사이먼/부산프리미엄아울렛",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "쇼핑몰",
+          "rank": 6
+        },
+        {
+          "id": "71a1c900d8f1c769726c27c10b45ea66",
+          "name": "코랄라니",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 7
+        },
+        {
+          "id": "70e6890cfe8aabcf171d5704ac9876b3",
+          "name": "죽성드림세트장",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "기타문화관광지",
+          "rank": 8
+        },
+        {
+          "id": "c9ca44d4a0569ed41bc3521439c962b2",
+          "name": "마티에오시리아호텔",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 9
+        },
+        {
+          "id": "607153e3e7e879a86c9505cd5bcb1860",
+          "name": "대변항",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 10
+        },
+        {
+          "id": "de8cebb607b00fc096e918a27ad8b8cb",
+          "name": "덕미",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 11
+        },
+        {
+          "id": "cca6006f836d44cae413927ab2b33a99",
+          "name": "웨이브온커피",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 12
+        },
+        {
+          "id": "a3d06e836946ebc5c5dbfaccd5f72bfc",
+          "name": "갓샷",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 13
+        },
+        {
+          "id": "3683ec39317ce1a7d7d3a109c0797696",
+          "name": "국립부산과학관",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "전시시설",
+          "rank": 14
+        },
+        {
+          "id": "6056a764620be8031e8251630eaad176",
+          "name": "기장끝집/본점",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 15
+        },
+        {
+          "id": "bd31c55b878ebaec79def68ff2e259b9",
+          "name": "해운대블루라인파크/미포정거장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 16
+        },
+        {
+          "id": "efa969abed9618809f442fb2ddd2cf04",
+          "name": "해운대블루라인파크/청사포정거장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 17
+        },
+        {
+          "id": "710f9977fd27ee13b0dde1645dad0b75",
+          "name": "빌라쥬 드 아난티",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "숙박",
+          "subcategory": "콘도미니엄",
+          "rank": 18
+        },
+        {
+          "id": "54b64291ef5d01a6c692f95599d6b038",
+          "name": "롯데월드 어드벤처 부산",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "테마공원",
+          "rank": 19
+        },
+        {
+          "id": "baa51fccadc208f442ef834b47f00152",
+          "name": "아홉산숲",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "테마공원",
+          "rank": 20
+        },
+        {
+          "id": "02d749dc152d840eeea5dcd22c80cf22",
+          "name": "청사포다릿돌전망대",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 21
+        },
+        {
+          "id": "965371994970f64eece82c771b05fa42",
+          "name": "공극샌드커피",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 22
+        },
+        {
+          "id": "093231be3cdaa9651091482fbeb0c973",
+          "name": "오륙도스카이워크",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 23
+        },
+        {
+          "id": "04e22ab9ccd94d092974b646e4918b75",
+          "name": "용궁해물칼국수",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 24
+        },
+        {
+          "id": "b9dab70a4eac8268531bbd26c0ac30aa",
+          "name": "감천문화마을",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 25
+        },
+        {
+          "id": "c63b5b337225ae746ba52eb7f398aac1",
+          "name": "광안리해수욕장",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 26
+        },
+        {
+          "id": "f7679d376645a5c63718a511d0d9199c",
+          "name": "해운대가야밀면",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 27
+        },
+        {
+          "id": "d03363c36f4697aa2e7425924524215d",
+          "name": "일광해수욕장",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 28
+        },
+        {
+          "id": "bb09a61999b4ec002d39ece84b80d93f",
+          "name": "해운대블루라인파크/송정정거장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 29
+        },
+        {
+          "id": "5799b6d0af5ec9d8e6be0d157ef8fa78",
+          "name": "기장혼국보미역/본점",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 30
+        },
+        {
+          "id": "7386edddb0d965b5243d4dce332cc5d2",
+          "name": "칠암사계",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 31
+        },
+        {
+          "id": "9c1d68ce9e83dc91a9e9d5af8c490628",
+          "name": "카페윤",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 32
+        },
+        {
+          "id": "ab8c7c8ffd87dcbff6ba11becf2c5d85",
+          "name": "뉴시즈오시리아레지던스",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "숙박",
+          "subcategory": "기타숙박",
+          "rank": 33
+        },
+        {
+          "id": "2b4c34c2be8d8855ef58504465e865f1",
+          "name": "청사포방파제",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 34
+        },
+        {
+          "id": "aa38da3c25e713ce8e4fce648de24391",
+          "name": "풍원장시골밥상집/[한식]",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 35
+        },
+        {
+          "id": "389e134e226834c8219e49f14b29560c",
+          "name": "금수복국/해운대본점",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 36
+        },
+        {
+          "id": "d3a6c1909ebec629dce00f018edbe268",
+          "name": "SEA LIFE 부산아쿠아리움",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "테마공원",
+          "rank": 37
+        },
+        {
+          "id": "f4b4f749a6cdfd734d4512c18b227d6a",
+          "name": "태종대",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "역사유적지",
+          "rank": 38
+        },
+        {
+          "id": "8fe02ca30ea09ac53be86a76b9c78540",
+          "name": "애월빵공장/부산기장점",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 39
+        },
+        {
+          "id": "e292b40f180edc6f5c75383b350c793f",
+          "name": "피크스퀘어",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 40
+        },
+        {
+          "id": "5cabc9e01aa762142d152c801f422edb",
+          "name": "장씨해녀집/연화본점",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 41
+        },
+        {
+          "id": "62b671a97c4e4c6209423dbf3bfa49a8",
+          "name": "동백섬",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 42
+        },
+        {
+          "id": "bc8e257824b2a8ff287f1555e28407d4",
+          "name": "한화리조트/해운대",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "숙박",
+          "subcategory": "콘도미니엄",
+          "rank": 43
+        },
+        {
+          "id": "317b93c5ae74487dfce5c84f98438b07",
+          "name": "부산항영도크루즈터미널",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 44
+        },
+        {
+          "id": "a54f2fafc0d33120fb7d53922ae5d14d",
+          "name": "하녹",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 45
+        },
+        {
+          "id": "b1750ff7368d02af3eb01d0e0c59383e",
+          "name": "수변최고돼지국밥/송정직영점",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 46
+        },
+        {
+          "id": "5fa65515547f3b5f37074739e2c78342",
+          "name": "해광사",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "종교성지",
+          "rank": 47
+        },
+        {
+          "id": "5324552074b6d447c4eb74062cf3ba08",
+          "name": "향유정속초이모네찜/부산점",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 48
+        },
+        {
+          "id": "1a840e2efd4f70fd8eff616a96092ef0",
+          "name": "아난티코브",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "복합관광시설",
+          "rank": 49
+        },
+        {
+          "id": "3b4b01d135b3dc4906155767967c4afe",
+          "name": "파라다이스호텔/부산",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 50
+        }
+      ],
+      "hasData": true,
+      "sourceUrl": "https://www.data.go.kr/data/15128560/openapi.do"
+    },
+    {
+      "id": "oryukdo",
+      "name": "오륙도 스카이워크",
+      "registrationName": "오륙도스카이워크",
+      "tourismId": "093231be3cdaa9651091482fbeb0c973",
+      "region": "부산광역시",
+      "district": "남구",
+      "category": [
+        "관광지",
+        "문화관광",
+        "랜드마크관광"
+      ],
+      "baseYm": "202609",
+      "fetchedAt": "2026-10-29T06:20:10.533Z",
+      "direction": "outgoing",
+      "related": [
+        {
+          "id": "d68c2c6af7cf6cb1092154f35a52c1c7",
+          "name": "해동용궁사",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "종교성지",
+          "rank": 1
+        },
+        {
+          "id": "d6dc86e69c840d73ff5067a11c789691",
+          "name": "자갈치시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 2
+        },
+        {
+          "id": "c63b5b337225ae746ba52eb7f398aac1",
+          "name": "광안리해수욕장",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 3
+        },
+        {
+          "id": "b9dab70a4eac8268531bbd26c0ac30aa",
+          "name": "감천문화마을",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 4
+        },
+        {
+          "id": "b9a7ac19b36fbc249063bb0633fd383a",
+          "name": "베이커리카페가원",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 5
+        },
+        {
+          "id": "549bc4c4eb4664151739287503544839",
+          "name": "흰여울문화마을",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 6
+        },
+        {
+          "id": "f4b4f749a6cdfd734d4512c18b227d6a",
+          "name": "태종대",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "역사유적지",
+          "rank": 7
+        },
+        {
+          "id": "1636c7fed5ba4320d84b81d80b438dbe",
+          "name": "이기대수변공원",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "도시공원",
+          "rank": 8
+        },
+        {
+          "id": "88222e7e5f8172698373086e65c1fad1",
+          "name": "해운대해수욕장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 9
+        },
+        {
+          "id": "40b9a2723e1d6c30c85bb532b0faa97f",
+          "name": "백련사",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "종교성지",
+          "rank": 10
+        },
+        {
+          "id": "ca6e8851e611e1b92c5448d82208acdb",
+          "name": "송도해상케이블카",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 11
+        },
+        {
+          "id": "317b93c5ae74487dfce5c84f98438b07",
+          "name": "부산항영도크루즈터미널",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 12
+        },
+        {
+          "id": "09485ccc9e6891848afe25485d9a1f94",
+          "name": "이재모피자/본점",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 13
+        },
+        {
+          "id": "9a48cf28d24a8978118c3d29ff29ac42",
+          "name": "합천국밥집",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 14
+        },
+        {
+          "id": "bc8e257824b2a8ff287f1555e28407d4",
+          "name": "한화리조트/해운대",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "숙박",
+          "subcategory": "콘도미니엄",
+          "rank": 15
+        },
+        {
+          "id": "553a1099bf1a5568f3e6153e44dbd6c7",
+          "name": "김해국제공항",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 16
+        },
+        {
+          "id": "5450fecdab3e998eb0d930d9f329f627",
+          "name": "송도용궁구름다리",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 17
+        },
+        {
+          "id": "5273477032d69237c2967e5372966eec",
+          "name": "라발스호텔",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 18
+        },
+        {
+          "id": "bd31c55b878ebaec79def68ff2e259b9",
+          "name": "해운대블루라인파크/미포정거장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 19
+        },
+        {
+          "id": "8017a42d98f4c15d339662887f022f47",
+          "name": "쏘리낫쏘리베이크샵",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 20
+        },
+        {
+          "id": "98704b020aa76f5f7e75af6010b148ed",
+          "name": "백운포체육공원",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "도시공원",
+          "rank": 21
+        },
+        {
+          "id": "ccf40214e7861046a572df429ee6e389",
+          "name": "국제시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 22
+        },
+        {
+          "id": "bf44234f9b63729e0fe62962a5188523",
+          "name": "송정해수욕장",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 23
+        },
+        {
+          "id": "7d49d915792d9508e0069b7899e8e39c",
+          "name": "진주횟집",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 24
+        },
+        {
+          "id": "724746776b310e4c59e5e1a6650bed03",
+          "name": "황령산전망대",
+          "region": "부산광역시",
+          "district": "연제구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 25
+        },
+        {
+          "id": "55fb28d15b37ccae55a90bf7fb88a19f",
+          "name": "토요코인/부산해운대2호점",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 26
+        },
+        {
+          "id": "62b671a97c4e4c6209423dbf3bfa49a8",
+          "name": "동백섬",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 27
+        },
+        {
+          "id": "02d749dc152d840eeea5dcd22c80cf22",
+          "name": "청사포다릿돌전망대",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 28
+        },
+        {
+          "id": "3861d6518ec913de1389df467926f7d6",
+          "name": "맥도날드/부산동명대DT점",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 29
+        },
+        {
+          "id": "2541e7b58a76e4324c486141292a1600",
+          "name": "부산역",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 30
+        },
+        {
+          "id": "1ea598dc01b76006a827318e12339ffb",
+          "name": "루아앤티그리",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 31
+        },
+        {
+          "id": "6e06543496ef717c4d7f483794751487",
+          "name": "VIPS/부산W스퀘어점",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 32
+        },
+        {
+          "id": "623663795e6adcf67c3ea4ebaddda642",
+          "name": "본전돼지국밥",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 33
+        },
+        {
+          "id": "4bf4d8422fb833ca46cd11a2562e9abf",
+          "name": "내호냉면/본점",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 34
+        },
+        {
+          "id": "5792a97ca4fbd118419c6a7e8c175e5c",
+          "name": "동생말전망대",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 35
+        },
+        {
+          "id": "e1840a979315dc809efe6bf49041fbe8",
+          "name": "국립일제강제동원역사관",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "전시시설",
+          "rank": 36
+        },
+        {
+          "id": "70e6890cfe8aabcf171d5704ac9876b3",
+          "name": "죽성드림세트장",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "관광지",
+          "subcategory": "기타문화관광지",
+          "rank": 37
+        },
+        {
+          "id": "032333718d4f3c442a222f9d1a499202",
+          "name": "민락어민활어직판장",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 38
+        },
+        {
+          "id": "4c11869d6bef8db93bfaa1cd83d8d4b9",
+          "name": "동경밥상/[일식]",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "음식",
+          "subcategory": "외국식",
+          "rank": 39
+        },
+        {
+          "id": "7bc4a84f9de2a4ab04e9736fcbbab01d",
+          "name": "수변최고돼지국밥/민락본점",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 40
+        },
+        {
+          "id": "04e22ab9ccd94d092974b646e4918b75",
+          "name": "용궁해물칼국수",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 41
+        },
+        {
+          "id": "28b8cc80b9914902d218a65406d1857c",
+          "name": "하운드호텔/부산역",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 42
+        },
+        {
+          "id": "90fbb1bdba9e5796b1e5e64bac5b91bb",
+          "name": "할매재첩국/부산본점",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 43
+        },
+        {
+          "id": "b2f901134914aafc7bccad9be9d03c5f",
+          "name": "이기대해안산책로",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "기타레저스포츠",
+          "rank": 44
+        },
+        {
+          "id": "977254afc931e9ce71a79bf802c1ec20",
+          "name": "제이엠커피로스터스/용호점",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 45
+        },
+        {
+          "id": "eecddaa31a447661e847adf5a7734edc",
+          "name": "문토스트/송정본점",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 46
+        },
+        {
+          "id": "07c1dec26fa9f59310818df19d881fdc",
+          "name": "빨간떡볶이",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 47
+        },
+        {
+          "id": "51dff2cc3cb6dea8291b7d7b1ea95384",
+          "name": "모모스커피/도모헌점",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 48
+        },
+        {
+          "id": "8c1c1bfc8a2750310c5d1d0695ef74eb",
+          "name": "피아크카페앤베이커리",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 49
+        },
+        {
+          "id": "b2cd6fdc324c7e59e23f4249c1077c9d",
+          "name": "태종대전망대",
+          "region": "부산광역시",
+          "district": "영도구",
+          "category": "관광지",
+          "subcategory": "랜드마크관광",
+          "rank": 50
+        }
+      ],
+      "hasData": true,
+      "sourceUrl": "https://www.data.go.kr/data/15128560/openapi.do"
+    },
+    {
+      "id": "eulsukdo",
+      "name": "을숙도생태공원",
+      "registrationName": "을숙도공원",
+      "tourismId": "8e5645030d7d79144dffe58933a410ac",
+      "region": "부산광역시",
+      "district": "사하구",
+      "category": [
+        "관광지",
+        "문화관광",
+        "도시공원"
+      ],
+      "baseYm": "202609",
+      "fetchedAt": "2026-10-29T06:20:10.533Z",
+      "direction": "outgoing",
+      "related": [
+        {
+          "id": "80b68dec7a324fdf7d4bc5a5ef023994",
+          "name": "다대포해수욕장",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 1
+        },
+        {
+          "id": "24ae399213c8d5cae5fa16a3168fc432",
+          "name": "낙동강하구에코센터",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "기타관광",
+          "rank": 2
+        },
+        {
+          "id": "037c8b66195005ef3d541e191791c527",
+          "name": "스타필드시티/명지",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "관광지",
+          "subcategory": "쇼핑몰",
+          "rank": 3
+        },
+        {
+          "id": "1afce0d010e203fa0b9b7c3e138777fe",
+          "name": "삼락생태공원",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "관광지",
+          "subcategory": "도시공원",
+          "rank": 4
+        },
+        {
+          "id": "e072c1b4998d4085fa9a342d74a7042f",
+          "name": "부산현대미술관",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "전시시설",
+          "rank": 5
+        },
+        {
+          "id": "d370e090659fb62031b46eec83ecdc96",
+          "name": "을숙도/피크닉광장",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "관광지",
+          "subcategory": "도시공원",
+          "rank": 6
+        },
+        {
+          "id": "3d65b6165d0d8357a7e20d17163956ee",
+          "name": "김해공항국내선청사",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 7
+        },
+        {
+          "id": "4f8c6518acd1e6ff053e589e0ac90fa7",
+          "name": "송도해수욕장",
+          "region": "부산광역시",
+          "district": "서구",
+          "category": "관광지",
+          "subcategory": "자연경관(하천/해양)",
+          "rank": 8
+        },
+        {
+          "id": "952cd69a93a8ea49d2b6445d6e995b98",
+          "name": "블랙업커피/을숙도점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 9
+        },
+        {
+          "id": "0ae6ba99c2672826ba29a088915d10c2",
+          "name": "스타벅스/을숙도강변DT점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 10
+        },
+        {
+          "id": "48d34ac12687ca5877005600e4b5a97f",
+          "name": "디베르소",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 11
+        },
+        {
+          "id": "4b90bbfc6bc6547ff738b8a53a2c370f",
+          "name": "이재모피자/명지대방점",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 12
+        },
+        {
+          "id": "33d302d57cec6f5a85917dec958d1a01",
+          "name": "스타벅스/명지강변DT점",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 13
+        },
+        {
+          "id": "c397c50e6c44d699989272319d5a1c3b",
+          "name": "선암사",
+          "region": "부산광역시",
+          "district": "부산진구",
+          "category": "관광지",
+          "subcategory": "종교성지",
+          "rank": 14
+        },
+        {
+          "id": "2541e7b58a76e4324c486141292a1600",
+          "name": "부산역",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "관광지",
+          "subcategory": "교통시설",
+          "rank": 15
+        },
+        {
+          "id": "e2ea408c982553a917e1d578f7980b7b",
+          "name": "신발원",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "음식",
+          "subcategory": "외국식",
+          "rank": 16
+        },
+        {
+          "id": "f757bed263f144ab64677569f69e653e",
+          "name": "영진돼지국밥",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 17
+        },
+        {
+          "id": "1636c7fed5ba4320d84b81d80b438dbe",
+          "name": "이기대수변공원",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "도시공원",
+          "rank": 18
+        },
+        {
+          "id": "1b173284da48f1e2fc03589641a91c30",
+          "name": "히떼로스터리/강서점",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 19
+        },
+        {
+          "id": "a5e4a370e1c7a59d050ae6bb0eaccd3e",
+          "name": "르네시떼",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "관광지",
+          "subcategory": "쇼핑몰",
+          "rank": 20
+        },
+        {
+          "id": "a40f9af59987f3f8af048f30c2811e73",
+          "name": "샤브올데이/부산화명점",
+          "region": "부산광역시",
+          "district": "북구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 21
+        },
+        {
+          "id": "9b4d797b8b9df17e7d24e8843d964a33",
+          "name": "로빈뮤지엄",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 22
+        },
+        {
+          "id": "9d3560dd854d7723ce595dfcef6b0564",
+          "name": "맥도날드/부산하단DT점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 23
+        },
+        {
+          "id": "0c596b9341577b15b4ece5e5173135e1",
+          "name": "맥도날드/부산다대DT점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 24
+        },
+        {
+          "id": "d714b5e6586fe9de8fbf1ff838f5a654",
+          "name": "VSANT",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 25
+        },
+        {
+          "id": "ea7e95378ed2397d322178e2e6d431d5",
+          "name": "정짓간/신평본점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 26
+        },
+        {
+          "id": "c1c70989f93dc0e5274917d52d750a21",
+          "name": "외식1번가/서부산점",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 27
+        },
+        {
+          "id": "cea1e7d6426d18aa192c4ca0de8fb325",
+          "name": "본가/부산사하점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 28
+        },
+        {
+          "id": "7f48e760b99c39e4130a468785359176",
+          "name": "코지하우스/하단점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 29
+        },
+        {
+          "id": "f577393c55c097c219b5c1cf5e2626ae",
+          "name": "풍원장/엄궁점",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 30
+        },
+        {
+          "id": "ccf40214e7861046a572df429ee6e389",
+          "name": "국제시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 31
+        },
+        {
+          "id": "3a91ca88560e4ad7d0842c33b19a6dec",
+          "name": "W스퀘어",
+          "region": "부산광역시",
+          "district": "남구",
+          "category": "관광지",
+          "subcategory": "쇼핑몰",
+          "rank": 32
+        },
+        {
+          "id": "1a067257ce205e4c47282cb60151e344",
+          "name": "오르디",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 33
+        },
+        {
+          "id": "02ea5521c027207100262f5b6bfab015",
+          "name": "샤브원/명지점",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 34
+        },
+        {
+          "id": "bc68ce667fd00ae617909661ad47b0a9",
+          "name": "투썸플레이스/부산장림점",
+          "region": "부산광역시",
+          "district": "사하구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 35
+        },
+        {
+          "id": "999ec9edf1f858bb87f800e5c99128f0",
+          "name": "쿠타팜테라스/광안리점",
+          "region": "부산광역시",
+          "district": "수영구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 36
+        },
+        {
+          "id": "5d9e9987fc949f87583bb59a880eb48e",
+          "name": "감전시장",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 37
+        },
+        {
+          "id": "07da993a26b0d2fdec240e80a2d742ba",
+          "name": "그랜드하브",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 38
+        },
+        {
+          "id": "5d4ac6f53be06f5101358c62163af7c7",
+          "name": "롯데백화점/센텀시티점",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "관광지",
+          "subcategory": "백화점",
+          "rank": 39
+        },
+        {
+          "id": "08762139bf059396719af26e5193f7e6",
+          "name": "애플아울렛/본관",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "관광지",
+          "subcategory": "쇼핑몰",
+          "rank": 40
+        },
+        {
+          "id": "27cd3d775da11467c857ea353de005fc",
+          "name": "프루터리포레스트/달맞이점",
+          "region": "부산광역시",
+          "district": "해운대구",
+          "category": "음식",
+          "subcategory": "카페/찻집",
+          "rank": 41
+        },
+        {
+          "id": "0f80d502645f740e8bdb5d748030557d",
+          "name": "브라운도트호텔/엄궁점",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 42
+        },
+        {
+          "id": "5c1a75fa9732ddea02ae61fb5a96e34b",
+          "name": "신호공원",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "관광지",
+          "subcategory": "도시공원",
+          "rank": 43
+        },
+        {
+          "id": "fbdd00e70f7c098eb6fef2e27728ebf7",
+          "name": "방코",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 44
+        },
+        {
+          "id": "bffde0a1a5c20cd05b096f6782fa44aa",
+          "name": "맥도날드/부산엄궁DT점",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "음식",
+          "subcategory": "간이음식",
+          "rank": 45
+        },
+        {
+          "id": "ad6296ed5bd3eb6146630b57194c3167",
+          "name": "무한사랑김치찌개",
+          "region": "부산광역시",
+          "district": "사상구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 46
+        },
+        {
+          "id": "1713ba90a654752ceec36a4646645167",
+          "name": "대동할매국수",
+          "region": "부산광역시",
+          "district": "강서구",
+          "category": "음식",
+          "subcategory": "한식",
+          "rank": 47
+        },
+        {
+          "id": "d6dc86e69c840d73ff5067a11c789691",
+          "name": "자갈치시장",
+          "region": "부산광역시",
+          "district": "중구",
+          "category": "관광지",
+          "subcategory": "시장",
+          "rank": 48
+        },
+        {
+          "id": "5cabc9e01aa762142d152c801f422edb",
+          "name": "장씨해녀집/연화본점",
+          "region": "부산광역시",
+          "district": "기장군",
+          "category": "음식",
+          "subcategory": "전문음식",
+          "rank": 49
+        },
+        {
+          "id": "3d45ad215dada248993ceafdc0d46e42",
+          "name": "토요코인호텔/부산역1호점",
+          "region": "부산광역시",
+          "district": "동구",
+          "category": "숙박",
+          "subcategory": "호텔",
+          "rank": 50
+        }
+      ],
+      "hasData": true,
+      "sourceUrl": "https://www.data.go.kr/data/15128560/openapi.do"
+    }
+  ]
+}
